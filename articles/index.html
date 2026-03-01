@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章 - AI 新闻日报</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI',
+                               'Noto Sans SC', 'PingFang SC', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        .prose h1 { @apply text-2xl font-bold mt-6 mb-3; }
+        .prose h2 { @apply text-xl font-semibold mt-5 mb-2; }
+        .prose h3 { @apply text-lg font-semibold mt-4 mb-2; }
+        .prose p { @apply mb-3 leading-relaxed; }
+        .prose ul { @apply list-disc pl-5 mb-3; }
+        .prose ol { @apply list-decimal pl-5 mb-3; }
+        .prose li { @apply mb-1; }
+        .prose code { @apply bg-gray-100 px-1.5 py-0.5 rounded text-sm; }
+        .prose pre { @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-4; }
+        .prose a { @apply text-blue-600 hover:underline; }
+        .prose blockquote { @apply border-l-4 border-blue-400 pl-4 italic text-gray-600 my-4; }
+        .prose table { @apply w-full border-collapse mb-4; }
+        .prose th { @apply bg-gray-100 border border-gray-200 px-3 py-2 text-left text-sm font-semibold; }
+        .prose td { @apply border border-gray-200 px-3 py-2 text-sm; }
+        .prose hr { @apply my-6 border-gray-200; }
+    </style>
+    
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen font-sans">
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-14">
+                <a href="/" class="font-bold text-lg text-gray-900 tracking-tight">
+                    NewsBot
+                </a>
+                <div class="flex items-center gap-5 text-sm">
+                    <a href="/" class="text-gray-500 hover:text-gray-900 transition-colors">首页</a>
+                    <a href="/articles/" class="text-gray-500 hover:text-gray-900 transition-colors">文章</a>
+                    <a href="/digests/" class="text-gray-500 hover:text-gray-900 transition-colors">日报</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+        
+<div class="space-y-6">
+
+    <div class="flex items-center justify-between">
+        <h1 class="text-xl font-bold text-gray-900">全部文章</h1>
+        <span class="text-sm text-gray-400">共 200 篇</span>
+    </div>
+
+    
+    <div class="flex flex-wrap gap-2 text-sm">
+        <a href="/articles/" class="px-3 py-1 rounded-full border bg-blue-50 border-blue-200 text-blue-700">全部</a>
+        
+        <a href="/articles/source/rss.html" class="px-3 py-1 rounded-full border border-gray-200 text-gray-500 hover:border-gray-300">rss</a>
+        
+    </div>
+
+    
+    <div class="space-y-2">
+        
+        <a href="/articles/bc53493f-6e62-4440-ae76-41d5ab8a72ac.html"
+           class="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+            <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                    <h3 class="text-sm font-medium text-gray-900 line-clamp-2">千问3.5霸榜全球开源大模型前四，10分钟通过中级程序员5小时编程</h3>
+                    
+                    <p class="text-xs text-gray-500 mt-1 line-clamp-1">Execution error</p>
+                    
+                    <div class="flex flex-wrap items-center gap-2 mt-1.5">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">量子位</span>
+                        <span class="text-xs text-gray-400">rss</span>
+                        
+                        <span class="text-xs text-gray-400">2026-02-26</span>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </a>
+        
+        <a href="/articles/f98eec92-093f-4eed-b3c3-2781c3083dff.html"
+           class="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+            <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                    <h3 class="text-sm font-medium text-gray-900 line-clamp-2">千问AI春节DAU创历史新高，单日增幅惊人</h3>
+                    
+                    <p class="text-xs text-gray-500 mt-1 line-clamp-1">我需要获取这篇文章的原文内容才能进行分析。由于我无法直接访问网络获取内容，请您提供文章的完整内容，我将为您生成结构化的摘要。
+
+请将&#34;千问AI春节DAU创历史新高，单日增幅惊人&#34;这篇文章的完整内容粘贴</p>
+                    
+                    <div class="flex flex-wrap items-center gap-2 mt-1.5">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">量子位</span>
+                        <span class="text-xs text-gray-400">rss</span>
+                        
+                        <span class="text-xs text-gray-400">2026-02-27</span>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </a>
+        
+        <a href="/articles/749b5b8d-d347-420e-9a1e-bc6150efb88c.html"
+           class="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+            <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                    <h3 class="text-sm font-medium text-gray-900 line-clamp-2">阶跃星辰杀入季后赛，强势跻身AI“新六小虎”第一梯队</h3>
+                    
+                    <p class="text-xs text-gray-500 mt-1 line-clamp-1">原文内容缺失，无法生成结构化摘要。请提供完整的文章内容以便进行分析。</p>
+                    
+                    <div class="flex flex-wrap items-center gap-2 mt-1.5">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">量子位</span>
+                        <span class="text-xs text-gray-400">rss</span>
+                        
+                        <span class="text-xs text-gray-400">2026-02-27</span>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </a>
+        
+        <a href="/articles/0026bbd2-8ef3-4b3f-8460-dff3c29c1db7.html"
+           class="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+            <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                    <h3 class="text-sm font-medium text-gray-900 line-clamp-2">反转！吓崩华尔街的AI末日预言报告被证伪，纳斯达克道琼斯都白跌了</h3>
+                    
+                    <p class="text-xs text-gray-500 mt-1 line-clamp-1">您好，您提供的&#34;原文内容&#34;是空的，我无法根据空的内容生成结构化摘要。请您提供完整的文章内容，我将为您生成符合要求的JSON格式摘要。</p>
+                    
+                    <div class="flex flex-wrap items-center gap-2 mt-1.5">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">量子位</span>
+                        <span class="text-xs text-gray-400">rss</span>
+                        
+                        <span class="text-xs text-gray-400">2026-02-27</span>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </a>
+        
+        <a href="/articles/a9f35756-4eac-4f5a-9dc9-8359de455ffa.html"
+           class="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+            <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                    <h3 class="text-sm font-medium text-gray-900 line-clamp-2">杀进全球榜TOP2！国产视频模型黑马刚刚出现了</h3>
+                    
+                    <p class="text-xs text-gray-500 mt-1 line-clamp-1">国产视频模型音画同步一次生成技术登顶全球榜TOP2</p>
+                    
+                    <div class="flex flex-wrap items-center gap-2 mt-1.5">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">量子位</span>
+                        <span class="text-xs text-gray-400">rss</span>
+                        
+                        <span class="text-xs text-gray-400">2026-02-27</span>
+                        
+                        
+                        <span class="text-xs bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">视频生成</span>
+                        
+                        <span class="text-xs bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">多模态</span>
+                        
+                        <span class="text-xs bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">国产模型</span>
+                        
+                    </div>
+                </div>
+                
+                <span class="text-sm font-bold text-green-600 shrink-0 mt-0.5">
+                    0.8
+                </span>
+                
+            </div>
+        </a>
+        
+        <a href="/articles/ac563ea0-64c5-47ff-9ee6-012f54c57c19.html"
+           class="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+            <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                    <h3 class="text-sm font-medium text-gray-900 line-clamp-2">DeepSeek新论文剧透V4新框架！用闲置网卡加速智能体推理性能</h3>
+                    
+                    <p class="text-xs text-gray-500 mt-1 line-clamp-1">DeepSeek V4框架利用闲置网卡加速智能体推理</p>
+                    
+                    <div class="flex flex-wrap items-center gap-2 mt-1.5">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">量子位</span>
+                        <span class="text-xs text-gray-400">rss</span>
+                        
+                        <span class="text-xs text-gray-400">2026-02-27</span>
+                        
+                        
+                        <span class="text-xs bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">LLM</span>
+                        
+                        <span class="text-xs bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">Network Acceleration</span>
+                        
+                        <span class="text-xs bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">Inference Optimization</span>
+                        
+                    </div>
+                </div>
+                
+                <span class="text-sm font-bold text-green-600 shrink-0 mt-0.5">
+                    0.8
+                </span>
+                
+            </div>
+        </a>
+        
+        <a href="/articles/1a38f80f-7657-4557-a928-0caa5ef878b2.html"
+           class="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+            <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                    <h3 class="text-sm font-medium text-gray-900 line-clamp-2">何恺明团队新作GeoPT，全新预训练范式让模型自学真实物理规律</h3>
+                    
+                    <p class="text-xs text-gray-500 mt-1 line-clamp-1">GeoPT让模型通过自学掌握真实物理规律</p>
+                    
+                    <div class="flex flex-wrap items-center gap-2 mt-1.5">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">量子位</span>
+                        <span class="text-xs text-gray-400">rss</span>
+                        
+                        <span class="text-xs text-gray-400">2026-02-27</span>
+                        
+                        
+                        <span class="text-xs bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">预训练</span>
+                        
+                        <span class="text-xs bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">几何学习</span>
+                        
+                        <span class="text-xs bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">物理感知</span>
+                        
+                    </div>
+                </div>
+                
+                <span class="text-sm font-bold text-green-600 shrink-0 mt-0.5">
+                    0.7
+                </span>
+                
+            </div>
+        </a>
+        
+        <a href="/articles/54bc596e-bc2b-4f13-ad17-cfe3495b031c.html"
+           class="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+            <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                    <h3 class="text-sm font-medium text-gray-900 line-clamp-2">分拆百度Robotaxi萝卜快跑？李彦宏回应了</h3>
+                    
+                    <p class="text-xs text-gray-500 mt-1 line-clamp-1">李彦宏回应百度Robotaxi业务萝卜快跑分拆传闻，透露该业务日均订单量达4.3万单</p>
+                    
+                    <div class="flex flex-wrap items-center gap-2 mt-1.5">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">量子位</span>
+                        <span class="text-xs text-gray-400">rss</span>
+                        
+                        <span class="text-xs text-gray-400">2026-02-27</span>
+                        
+                        
+                        <span class="text-xs bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">自动驾驶</span>
+                        
+                        <span class="text-xs bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">Robotaxi</span>
+                        
+                        <span class="text-xs bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">商业化运营</span>
+                        
+                    </div>
+                </div>
+                
+                <span class="text-sm font-bold text-yellow-600 shrink-0 mt-0.5">
+                    0.5
+                </span>
+                
+            </div>
+        </a>
+        
+        <a href="/articles/aebb1f42-d17c-439e-8940-2245d8508d13.html"
+           class="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+            <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                    <h3 class="text-sm font-medium text-gray-900 line-clamp-2">OpenAI最新融资1100亿美元！英伟达亚马逊软银都抢到船票了</h3>
+                    
+                    <p class="text-xs text-gray-500 mt-1 line-clamp-1">注意：您提供的输入信息中，&#34;原文内容&#34;字段为空。
+
+要生成结构化摘要，我需要完整的文章内容。请您补充原文内容，我将按照您要求的JSON格式输出分析结果。</p>
+                    
+                    <div class="flex flex-wrap items-center gap-2 mt-1.5">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">量子位</span>
+                        <span class="text-xs text-gray-400">rss</span>
+                        
+                        <span class="text-xs text-gray-400">2026-02-28</span>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </a>
+        
+        <a href="/articles/962713c0-cbb1-4138-8e78-14f4b9944d05.html"
+           class="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+            <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                    <h3 class="text-sm font-medium text-gray-900 line-clamp-2">海淀放大招！90亿资金+近30条政策，重磅释放三大科创关键信号</h3>
+                    
+                    <p class="text-xs text-gray-500 mt-1 line-clamp-1">注意到&#34;原文内容&#34;字段为空，无法对文章进行分析和生成结构化摘要。请提供文章的完整内容，我将按照您要求的 JSON 格式输出结构化摘要。</p>
+                    
+                    <div class="flex flex-wrap items-center gap-2 mt-1.5">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">量子位</span>
+                        <span class="text-xs text-gray-400">rss</span>
+                        
+                        <span class="text-xs text-gray-400">2026-02-28</span>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </a>
+        
+        <a href="/articles/6a772a9b-db40-4f4b-a19b-9e62dc8de4bd.html"
+           class="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+            <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                    <h3 class="text-sm font-medium text-gray-900 line-clamp-2">I built a demo of what AI chat will look like when it&#39;s &#34;free&#34; and ad-supported</h3>
+                    
+                    <p class="text-xs text-gray-500 mt-1 line-clamp-1">作者构建了一个展示免费、广告支持的AI聊天界面可能样子的演示</p>
+                    
+                    <div class="flex flex-wrap items-center gap-2 mt-1.5">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">Hacker News</span>
+                        <span class="text-xs text-gray-400">rss</span>
+                        
+                        <span class="text-xs text-gray-400">2026-03-01</span>
+                        
+                        
+                        <span class="text-xs bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">AI Chat</span>
+                        
+                        <span class="text-xs bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">Ad-supported</span>
+                        
+                        <span class="text-xs bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">Business Model</span>
+                        
+                    </div>
+                </div>
+                
+                <span class="text-sm font-bold text-green-600 shrink-0 mt-0.5">
+                    0.8
+                </span>
+                
+            </div>
+        </a>
+        
+        <a href="/articles/f0049163-56b1-4fdb-ad5c-928d6c5bd240.html"
+           class="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+            <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                    <h3 class="text-sm font-medium text-gray-900 line-clamp-2">How to train a new language model from scratch using Transformers and Tokenizers</h3>
+                    
+                    <div class="flex flex-wrap items-center gap-2 mt-1.5">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">Hugging Face Blog</span>
+                        <span class="text-xs text-gray-400">rss</span>
+                        
+                        <span class="text-xs text-gray-400">2020-02-14</span>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </a>
+        
+        <a href="/articles/3572a0da-1403-478a-bf6c-1625f5d8d287.html"
+           class="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+            <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                    <h3 class="text-sm font-medium text-gray-900 line-clamp-2">How to generate text: using different decoding methods for language generation with Transformers</h3>
+                    
+                    <div class="flex flex-wrap items-center gap-2 mt-1.5">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">Hugging Face Blog</span>
+                        <span class="text-xs text-gray-400">rss</span>
+                        
+                        <span class="text-xs text-gray-400">2020-03-01</span>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </a>
+        
+        <a href="/articles/79b90585-0053-44ca-bbb4-c67433769788.html"
+           class="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+            <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                    <h3 class="text-sm font-medium text-gray-900 line-clamp-2">The Reformer - Pushing the limits of language modeling</h3>
+                    
+                    <div class="flex flex-wrap items-center gap-2 mt-1.5">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">Hugging Face Blog</span>
+                        <span class="text-xs text-gray-400">rss</span>
+                        
+                        <span class="text-xs text-gray-400">2020-07-03</span>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </a>
+        
+        <a href="/articles/7b8bb1cb-a8dc-44b4-8094-4c8b1e82d5aa.html"
+           class="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+            <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                    <h3 class="text-sm font-medium text-gray-900 line-clamp-2">Block Sparse Matrices for Smaller and Faster Language Models</h3>
+                    
+                    <div class="flex flex-wrap items-center gap-2 mt-1.5">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">Hugging Face Blog</span>
+                        <span class="text-xs text-gray-400">rss</span>
+                        
+                        <span class="text-xs text-gray-400">2020-09-10</span>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </a>
+        
+        <a href="/articles/242b3397-01d8-4046-b23c-871fb47cafba.html"
+           class="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+            <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                    <h3 class="text-sm font-medium text-gray-900 line-clamp-2">Transformer-based Encoder-Decoder Models</h3>
+                    
+                    <div class="flex flex-wrap items-center gap-2 mt-1.5">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">Hugging Face Blog</span>
+                        <span class="text-xs text-gray-400">rss</span>
+                        
+                        <span class="text-xs text-gray-400">2020-10-10</span>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </a>
+        
+        <a href="/articles/cc79071b-374e-4c5c-9a1a-02b963cbe7ac.html"
+           class="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+            <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                    <h3 class="text-sm font-medium text-gray-900 line-clamp-2">Hyperparameter Search with Transformers and Ray Tune</h3>
+                    
+                    <div class="flex flex-wrap items-center gap-2 mt-1.5">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">Hugging Face Blog</span>
+                        <span class="text-xs text-gray-400">rss</span>
+                        
+                        <span class="text-xs text-gray-400">2020-11-02</span>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </a>
+        
+        <a href="/articles/f77b54dc-142e-4c60-a72e-557ac512b51e.html"
+           class="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+            <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                    <h3 class="text-sm font-medium text-gray-900 line-clamp-2">Porting fairseq wmt19 translation system to transformers</h3>
+                    
+                    <div class="flex flex-wrap items-center gap-2 mt-1.5">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">Hugging Face Blog</span>
+                        <span class="text-xs text-gray-400">rss</span>
+                        
+                        <span class="text-xs text-gray-400">2020-11-03</span>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </a>
+        
+        <a href="/articles/65d9acef-a06b-49b2-b658-ba508a608fb1.html"
+           class="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+            <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                    <h3 class="text-sm font-medium text-gray-900 line-clamp-2">Leveraging Pre-trained Language Model Checkpoints for Encoder-Decoder Models</h3>
+                    
+                    <div class="flex flex-wrap items-center gap-2 mt-1.5">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">Hugging Face Blog</span>
+                        <span class="text-xs text-gray-400">rss</span>
+                        
+                        <span class="text-xs text-gray-400">2020-11-09</span>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </a>
+        
+        <a href="/articles/bac3ee24-bc64-4aaa-91dc-95b83f39600a.html"
+           class="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+            <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0 flex-1">
+                    <h3 class="text-sm font-medium text-gray-900 line-clamp-2">How we sped up transformer inference 100x for 🤗 API customers</h3>
+                    
+                    <div class="flex flex-wrap items-center gap-2 mt-1.5">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">Hugging Face Blog</span>
+                        <span class="text-xs text-gray-400">rss</span>
+                        
+                        <span class="text-xs text-gray-400">2021-01-18</span>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </a>
+        
+    </div>
+
+    
+    
+    <nav class="flex items-center justify-center gap-2 pt-4">
+        
+
+        <span class="text-sm text-gray-500 px-2">1 / 10</span>
+
+        
+        <a href="/articles/page/2.html"
+           class="px-3 py-1.5 text-sm border border-gray-200 rounded hover:bg-gray-50">下一页</a>
+        
+    </nav>
+    
+
+</div>
+
+    </main>
+
+    <footer class="border-t border-gray-100 mt-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-6 text-center text-xs text-gray-400">
+            Powered by NewsBot &middot; 2026-03-01 22:15
+        </div>
+    </footer>
+</body>
+</html>

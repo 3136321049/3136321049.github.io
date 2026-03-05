@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICLR 2026 | 把视频扩散模型压到4bit，还能接近满血效果？ QVGen让「超低比特视频生成量化」真正可用 - AI 新闻日报</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI',
+                               'Noto Sans SC', 'PingFang SC', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        .prose h1 { @apply text-2xl font-bold mt-6 mb-3; }
+        .prose h2 { @apply text-xl font-semibold mt-5 mb-2; }
+        .prose h3 { @apply text-lg font-semibold mt-4 mb-2; }
+        .prose p { @apply mb-3 leading-relaxed; }
+        .prose ul { @apply list-disc pl-5 mb-3; }
+        .prose ol { @apply list-decimal pl-5 mb-3; }
+        .prose li { @apply mb-1; }
+        .prose code { @apply bg-gray-100 px-1.5 py-0.5 rounded text-sm; }
+        .prose pre { @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-4; }
+        .prose a { @apply text-blue-600 hover:underline; }
+        .prose blockquote { @apply border-l-4 border-blue-400 pl-4 italic text-gray-600 my-4; }
+        .prose table { @apply w-full border-collapse mb-4; }
+        .prose th { @apply bg-gray-100 border border-gray-200 px-3 py-2 text-left text-sm font-semibold; }
+        .prose td { @apply border border-gray-200 px-3 py-2 text-sm; }
+        .prose hr { @apply my-6 border-gray-200; }
+    </style>
+    
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen font-sans">
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-14">
+                <a href="/" class="font-bold text-lg text-gray-900 tracking-tight">
+                    NewsBot
+                </a>
+                <div class="flex items-center gap-5 text-sm">
+                    <a href="/" class="text-gray-500 hover:text-gray-900 transition-colors">首页</a>
+                    <a href="/articles/" class="text-gray-500 hover:text-gray-900 transition-colors">文章</a>
+                    <a href="/digests/" class="text-gray-500 hover:text-gray-900 transition-colors">日报</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+        
+<article class="max-w-3xl mx-auto">
+
+    
+    <a href="/articles/" class="inline-flex items-center text-sm text-gray-400 hover:text-gray-600 mb-4">
+        &larr; 返回文章列表
+    </a>
+
+    
+    <h1 class="text-xl sm:text-2xl font-bold text-gray-900 leading-tight">ICLR 2026 | 把视频扩散模型压到4bit，还能接近满血效果？ QVGen让「超低比特视频生成量化」真正可用</h1>
+
+    
+    <div class="flex flex-wrap items-center gap-2 mt-3 text-sm">
+        <span class="bg-gray-100 text-gray-600 px-2 py-0.5 rounded">机器之心</span>
+        <span class="text-gray-400">rss</span>
+        
+        <span class="text-gray-400">2026-02-25</span>
+        
+        
+        <span class="text-gray-400">机器之心</span>
+        
+    </div>
+
+    
+    
+    <div class="flex flex-wrap gap-1.5 mt-2">
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">视频生成</span>
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">模型量化</span>
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">扩散模型</span>
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">高效推理</span>
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">QAT</span>
+        
+    </div>
+    
+
+    
+    <a href="https://www.jiqizhixin.com/articles/2026-02-25-9" target="_blank" rel="noopener"
+       class="inline-flex items-center gap-1 text-sm text-blue-600 hover:underline mt-3">
+        查看原文 &nearr;
+    </a>
+
+    
+    
+    <div class="mt-6 space-y-4">
+
+        
+        
+        <div class="flex items-center gap-3">
+            <span class="text-sm text-gray-500">相关度</span>
+            <div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden max-w-xs">
+                <div class="h-full rounded-full bg-green-500"
+                     style="width: 75%"></div>
+            </div>
+            <span class="text-sm font-semibold text-green-600">
+                0.8
+            </span>
+        </div>
+        
+
+        
+        
+        <div class="bg-blue-50 border border-blue-100 rounded-lg p-4">
+            <p class="text-sm font-medium text-blue-900">QVGen提出新的量化感知训练方法，使视频扩散模型在4bit量化下仍能保持接近原始性能</p>
+        </div>
+        
+
+        
+        
+        <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">核心贡献</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">解决了视频生成模型在超低比特量化（3/4bit）时质量严重下降的问题，提出了稳定有效的量化感知训练方案</p>
+        </div>
+        
+
+        
+        
+        <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">方法概述</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">通过改进的量化感知训练策略，在CogVideoX-2B等模型上实现逐通道权重量化和逐token激活量化，相比现有方法显著提升4bit量化的视频生成质量</p>
+        </div>
+        
+
+        
+        
+        <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">关键结论</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">该方法使4bit量化的视频生成模型在保持接近原始性能的同时大幅降低显存和算力需求，推动视频生成技术的实际应用</p>
+        </div>
+        
+
+        
+        <p class="text-xs text-gray-300">由 claude-internal-cli 生成</p>
+        
+    </div>
+    
+
+    
+    
+    <div class="mt-6">
+        <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">原文摘录</h3>
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-sm text-gray-600 leading-relaxed max-h-60 overflow-y-auto">
+            视频生成扩散模型越做越大：2B、5B、14B…… 效果提升很快，但训练与推理的成本也随之飙升。社区一直希望用量化把模型 “压小”，把显存和算力成本打下来，真正落到更多卡、更便宜的机器、更多真实应用中。可现实很残酷：一到 3/4 bit，视频生成的量化感知训练（QAT）往往比图像更难训、更不稳定，质量掉得更狠 —— 不是 “略降一点”，而是直接不可用。 图表 1 在 CogVideoX-2B 模型上 4-bit 逐通道权重量化与逐 token 激活量化的效果对比。（a）原始模型；（b）该论文所提出方案；（c-e）已有的量化感知训练方案；（f…
+        </div>
+    </div>
+    
+
+</article>
+
+    </main>
+
+    <footer class="border-t border-gray-100 mt-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-6 text-center text-xs text-gray-400">
+            Powered by NewsBot &middot; 2026-03-05 14:08
+        </div>
+    </footer>
+</body>
+</html>

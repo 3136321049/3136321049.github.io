@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoD-DPO: Towards Mitigating Cross-modal Hallucinations in Omni LLMs using Modality Decoupled Preference Optimization - AI 新闻日报</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI',
+                               'Noto Sans SC', 'PingFang SC', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        .prose h1 { @apply text-2xl font-bold mt-6 mb-3; }
+        .prose h2 { @apply text-xl font-semibold mt-5 mb-2; }
+        .prose h3 { @apply text-lg font-semibold mt-4 mb-2; }
+        .prose p { @apply mb-3 leading-relaxed; }
+        .prose ul { @apply list-disc pl-5 mb-3; }
+        .prose ol { @apply list-decimal pl-5 mb-3; }
+        .prose li { @apply mb-1; }
+        .prose code { @apply bg-gray-100 px-1.5 py-0.5 rounded text-sm; }
+        .prose pre { @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-4; }
+        .prose a { @apply text-blue-600 hover:underline; }
+        .prose blockquote { @apply border-l-4 border-blue-400 pl-4 italic text-gray-600 my-4; }
+        .prose table { @apply w-full border-collapse mb-4; }
+        .prose th { @apply bg-gray-100 border border-gray-200 px-3 py-2 text-left text-sm font-semibold; }
+        .prose td { @apply border border-gray-200 px-3 py-2 text-sm; }
+        .prose hr { @apply my-6 border-gray-200; }
+    </style>
+    
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen font-sans">
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-14">
+                <a href="/" class="font-bold text-lg text-gray-900 tracking-tight">
+                    NewsBot
+                </a>
+                <div class="flex items-center gap-5 text-sm">
+                    <a href="/" class="text-gray-500 hover:text-gray-900 transition-colors">首页</a>
+                    <a href="/articles/" class="text-gray-500 hover:text-gray-900 transition-colors">文章</a>
+                    <a href="/digests/" class="text-gray-500 hover:text-gray-900 transition-colors">日报</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+        
+<article class="max-w-3xl mx-auto">
+
+    
+    <a href="/articles/" class="inline-flex items-center text-sm text-gray-400 hover:text-gray-600 mb-4">
+        &larr; 返回文章列表
+    </a>
+
+    
+    <h1 class="text-xl sm:text-2xl font-bold text-gray-900 leading-tight">MoD-DPO: Towards Mitigating Cross-modal Hallucinations in Omni LLMs using Modality Decoupled Preference Optimization</h1>
+
+    
+    <div class="flex flex-wrap items-center gap-2 mt-3 text-sm">
+        <span class="bg-gray-100 text-gray-600 px-2 py-0.5 rounded">cs.CV</span>
+        <span class="text-gray-400">arxiv</span>
+        
+        <span class="text-gray-400">2026-03-03</span>
+        
+        
+        <span class="text-gray-400">Ashutosh Chaubey, Jiacheng Pang, Mohammad Soleymani</span>
+        
+    </div>
+
+    
+    
+    <div class="flex flex-wrap gap-1.5 mt-2">
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">多模态学习</span>
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">大语言模型</span>
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">幻觉缓解</span>
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">偏好优化</span>
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">模态解耦</span>
+        
+    </div>
+    
+
+    
+    <a href="http://arxiv.org/abs/2603.03192v1" target="_blank" rel="noopener"
+       class="inline-flex items-center gap-1 text-sm text-blue-600 hover:underline mt-3">
+        查看原文 &nearr;
+    </a>
+
+    
+    
+    <div class="mt-6 space-y-4">
+
+        
+        
+        <div class="flex items-center gap-3">
+            <span class="text-sm text-gray-500">相关度</span>
+            <div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden max-w-xs">
+                <div class="h-full rounded-full bg-green-500"
+                     style="width: 92%"></div>
+            </div>
+            <span class="text-sm font-semibold text-green-600">
+                0.9
+            </span>
+        </div>
+        
+
+        
+        
+        <div class="bg-blue-50 border border-blue-100 rounded-lg p-4">
+            <p class="text-sm font-medium text-blue-900">提出MoD-DPO框架，通过模态解耦优化减少全模态大语言模型中的跨模态幻觉问题</p>
+        </div>
+        
+
+        
+        
+        <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">核心贡献</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">引入模态感知正则化项，强制模型对无关模态的扰动保持不变性，对相关模态的扰动保持敏感性，并加入语言先验去偏惩罚项</p>
+        </div>
+        
+
+        
+        
+        <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">方法概述</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">MoD-DPO框架包含两个关键技术：模态感知正则化确保模型只关注相关模态信息，语言先验去偏惩罚项抑制基于文本先验的幻觉响应。该方法在相似的训练预算下优于现有偏好优化基线</p>
+        </div>
+        
+
+        
+        
+        <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">关键结论</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">实验表明MoD-DPO在多模态幻觉基准上显著提升感知准确性和抗幻觉能力，为构建更可靠的多模态基础模型提供了可扩展路径</p>
+        </div>
+        
+
+        
+        <p class="text-xs text-gray-300">由 claude-internal-cli 生成</p>
+        
+    </div>
+    
+
+    
+    
+    <div class="mt-6">
+        <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">原文摘录</h3>
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-sm text-gray-600 leading-relaxed max-h-60 overflow-y-auto">
+            Omni-modal large language models (omni LLMs) have recently achieved strong performance across audiovisual understanding tasks, yet they remain highly susceptible to cross-modal hallucinations arising from spurious correlations and dominant language priors. In this work, we propose Modality-Decoupled Direct Preference Optimization (MoD-DPO), a simple and effective framework for improving modality grounding in omni LLMs. MoD-DPO introduces modality-aware regularization terms that explicitly enforce invariance to corruptions in irrelevant modalities and sensitivity to perturbations in relevant modalities, thereby reducing unintended cross-modal interactions. To further mitigate over-reliance on textual priors, we incorporate a language-prior debiasing penalty that discourages hallucination-prone text-only responses. Extensive experiments across multiple audiovisual hallucination benchmarks demonstrate that MoD-DPO consistently improves perception accuracy and hallucination resistance, out...
+        </div>
+    </div>
+    
+
+</article>
+
+    </main>
+
+    <footer class="border-t border-gray-100 mt-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-6 text-center text-xs text-gray-400">
+            Powered by NewsBot &middot; 2026-03-05 14:08
+        </div>
+    </footer>
+</body>
+</html>

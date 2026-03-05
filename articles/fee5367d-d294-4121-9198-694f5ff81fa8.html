@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero- and Few-Shot Named-Entity Recognition: Case Study and Dataset in the Crime Domain (CrimeNER) - AI 新闻日报</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI',
+                               'Noto Sans SC', 'PingFang SC', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        .prose h1 { @apply text-2xl font-bold mt-6 mb-3; }
+        .prose h2 { @apply text-xl font-semibold mt-5 mb-2; }
+        .prose h3 { @apply text-lg font-semibold mt-4 mb-2; }
+        .prose p { @apply mb-3 leading-relaxed; }
+        .prose ul { @apply list-disc pl-5 mb-3; }
+        .prose ol { @apply list-decimal pl-5 mb-3; }
+        .prose li { @apply mb-1; }
+        .prose code { @apply bg-gray-100 px-1.5 py-0.5 rounded text-sm; }
+        .prose pre { @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-4; }
+        .prose a { @apply text-blue-600 hover:underline; }
+        .prose blockquote { @apply border-l-4 border-blue-400 pl-4 italic text-gray-600 my-4; }
+        .prose table { @apply w-full border-collapse mb-4; }
+        .prose th { @apply bg-gray-100 border border-gray-200 px-3 py-2 text-left text-sm font-semibold; }
+        .prose td { @apply border border-gray-200 px-3 py-2 text-sm; }
+        .prose hr { @apply my-6 border-gray-200; }
+    </style>
+    
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen font-sans">
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-14">
+                <a href="/" class="font-bold text-lg text-gray-900 tracking-tight">
+                    NewsBot
+                </a>
+                <div class="flex items-center gap-5 text-sm">
+                    <a href="/" class="text-gray-500 hover:text-gray-900 transition-colors">首页</a>
+                    <a href="/articles/" class="text-gray-500 hover:text-gray-900 transition-colors">文章</a>
+                    <a href="/digests/" class="text-gray-500 hover:text-gray-900 transition-colors">日报</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+        
+<article class="max-w-3xl mx-auto">
+
+    
+    <a href="/articles/" class="inline-flex items-center text-sm text-gray-400 hover:text-gray-600 mb-4">
+        &larr; 返回文章列表
+    </a>
+
+    
+    <h1 class="text-xl sm:text-2xl font-bold text-gray-900 leading-tight">Zero- and Few-Shot Named-Entity Recognition: Case Study and Dataset in the Crime Domain (CrimeNER)</h1>
+
+    
+    <div class="flex flex-wrap items-center gap-2 mt-3 text-sm">
+        <span class="bg-gray-100 text-gray-600 px-2 py-0.5 rounded">cs.CL</span>
+        <span class="text-gray-400">arxiv</span>
+        
+        <span class="text-gray-400">2026-03-02</span>
+        
+        
+        <span class="text-gray-400">Miguel Lopez-Duran, Julian Fierrez, Aythami Morales, Daniel DeAlcala, Gonzalo Mancera</span>
+        
+    </div>
+
+    
+    
+    <div class="flex flex-wrap gap-1.5 mt-2">
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">NER</span>
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">Few-Shot Learning</span>
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">Dataset</span>
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">Crime Domain</span>
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">LLM Evaluation</span>
+        
+    </div>
+    
+
+    
+    <a href="http://arxiv.org/abs/2603.02150v1" target="_blank" rel="noopener"
+       class="inline-flex items-center gap-1 text-sm text-blue-600 hover:underline mt-3">
+        查看原文 &nearr;
+    </a>
+
+    
+    
+    <div class="mt-6 space-y-4">
+
+        
+        
+        <div class="flex items-center gap-3">
+            <span class="text-sm text-gray-500">相关度</span>
+            <div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden max-w-xs">
+                <div class="h-full rounded-full bg-green-500"
+                     style="width: 90%"></div>
+            </div>
+            <span class="text-sm font-semibold text-green-600">
+                0.9
+            </span>
+        </div>
+        
+
+        
+        
+        <div class="bg-blue-50 border border-blue-100 rounded-lg p-4">
+            <p class="text-sm font-medium text-blue-900">提出CrimeNER数据集和方法，用于犯罪领域零样本和少样本命名实体识别研究。</p>
+        </div>
+        
+
+        
+        
+        <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">核心贡献</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">构建了包含1.5k+标注文档的犯罪领域NER数据集CrimeNERdb，定义了5类粗粒度和22类细粒度实体类型，并进行了零样本和少样本NER的系统实验研究。</p>
+        </div>
+        
+
+        
+        
+        <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">方法概述</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">从恐怖袭击公开报告和美国司法部新闻稿中提取文档进行人工标注，使用最先进的NER模型和通用大语言模型在零样本和少样本设置下进行实验验证数据集质量。</p>
+        </div>
+        
+
+        
+        
+        <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">关键结论</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">在犯罪领域缺乏标注数据的情况下，零样本和少样本NER方法可以有效提取犯罪相关信息，数据集和实验为该领域研究提供了基准。</p>
+        </div>
+        
+
+        
+        <p class="text-xs text-gray-300">由 claude-internal-cli 生成</p>
+        
+    </div>
+    
+
+    
+    
+    <div class="mt-6">
+        <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">原文摘录</h3>
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-sm text-gray-600 leading-relaxed max-h-60 overflow-y-auto">
+            The extraction of critical information from crime-related documents is a crucial task for law enforcement agencies. Named-Entity Recognition (NER) can perform this task in extracting information about the crime, the criminal, or law enforcement agencies involved. However, there is a considerable lack of adequately annotated data on general real-world crime scenarios. To address this issue, we present CrimeNER, a case-study of Crime-related zero- and Few-Shot NER, and a general Crime-related Named-Entity Recognition database (CrimeNERdb) consisting of more than 1.5k annotated documents for the NER task extracted from public reports on terrorist attacks and the U.S. Department of Justice&#39;s press notes. We define 5 types of coarse crime entity and a total of 22 types of fine-grained entity. We address the quality of the case-study and the annotated data with experiments on Zero and Few-Shot settings with State-of-the-Art NER models as well as generalist and commonly used Large Language Mo...
+        </div>
+    </div>
+    
+
+</article>
+
+    </main>
+
+    <footer class="border-t border-gray-100 mt-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-6 text-center text-xs text-gray-400">
+            Powered by NewsBot &middot; 2026-03-05 14:08
+        </div>
+    </footer>
+</body>
+</html>

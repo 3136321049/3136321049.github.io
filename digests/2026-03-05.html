@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日报 2026-03-05 - AI 新闻日报</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI',
+                               'Noto Sans SC', 'PingFang SC', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        .prose h1 { @apply text-2xl font-bold mt-6 mb-3; }
+        .prose h2 { @apply text-xl font-semibold mt-5 mb-2; }
+        .prose h3 { @apply text-lg font-semibold mt-4 mb-2; }
+        .prose p { @apply mb-3 leading-relaxed; }
+        .prose ul { @apply list-disc pl-5 mb-3; }
+        .prose ol { @apply list-decimal pl-5 mb-3; }
+        .prose li { @apply mb-1; }
+        .prose code { @apply bg-gray-100 px-1.5 py-0.5 rounded text-sm; }
+        .prose pre { @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-4; }
+        .prose a { @apply text-blue-600 hover:underline; }
+        .prose blockquote { @apply border-l-4 border-blue-400 pl-4 italic text-gray-600 my-4; }
+        .prose table { @apply w-full border-collapse mb-4; }
+        .prose th { @apply bg-gray-100 border border-gray-200 px-3 py-2 text-left text-sm font-semibold; }
+        .prose td { @apply border border-gray-200 px-3 py-2 text-sm; }
+        .prose hr { @apply my-6 border-gray-200; }
+    </style>
+    
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen font-sans">
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-14">
+                <a href="/" class="font-bold text-lg text-gray-900 tracking-tight">
+                    NewsBot
+                </a>
+                <div class="flex items-center gap-5 text-sm">
+                    <a href="/" class="text-gray-500 hover:text-gray-900 transition-colors">首页</a>
+                    <a href="/articles/" class="text-gray-500 hover:text-gray-900 transition-colors">文章</a>
+                    <a href="/digests/" class="text-gray-500 hover:text-gray-900 transition-colors">日报</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+        
+<article class="max-w-3xl mx-auto">
+
+    <a href="/digests/" class="inline-flex items-center text-sm text-gray-400 hover:text-gray-600 mb-4">
+        &larr; 返回日报归档
+    </a>
+
+    <h1 class="text-xl sm:text-2xl font-bold text-gray-900 mb-6">
+        日报 &middot; 2026-03-05
+    </h1>
+
+    <div class="bg-white rounded-xl border border-gray-200 p-5 sm:p-8 prose max-w-none">
+        <h1 id="202635">技术日报 | 2026年3月5日</h1>
+<h2 id="_1">今日亮点</h2>
+<h3 id="deepseekdualpathllm">DeepSeek联合清华北大推出DualPath推理系统，优化智能体LLM性能</h3>
+<p>论文提出DualPath推理系统，专门解决PD分离架构下KV-Cache读取负载不平衡问题，显著提升智能体工作负载下的推理性能。</p>
+<h3 id="_2">向量提示接口：大语言模型定制化新路径</h3>
+<p>研究主张LLM应公开向量提示输入作为公共接口，证据显示向量提示调优随监督增加持续改进，而文本提示优化存在早期饱和问题。</p>
+<h3 id="coding-plan">阿里云百炼推出最强Coding Plan，四大顶尖开源模型自由切换</h3>
+<p>支持Qwen3.5、GLM-5、MiniMax M2.5、Kimi K2.5四大模型API服务切换，突破单一模型限制，满足高频次编码需求。</p>
+<h2 id="_3">按主题分类</h2>
+<h3 id="llm">LLM定制化与推理优化</h3>
+<table>
+<thead>
+<tr>
+<th>文章</th>
+<th>一句话总结</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Position: Vector Prompt Interfaces Should Be Exposed to Enable Customization of Large Language Models</td>
+<td>主张大语言模型应公开向量提示接口作为定制化控制机制，以解决文本提示在可扩展性和稳定性上的局限</td>
+</tr>
+<tr>
+<td>$V_1$: Unifying Generation and Self-Verification for Parallel Reasoners</td>
+<td>提出V1框架，通过成对自验证统一生成与验证提升推理性能</td>
+</tr>
+<tr>
+<td>The Company You Keep: How LLMs Respond to Dark Triad Traits</td>
+<td>研究LLMs如何回应用户黑暗三联征特质的行为响应</td>
+</tr>
+<tr>
+<td>马斯克：Grok今日归来！</td>
+<td>Grok 4.20 Beta上线，集成4智能体支持持续迭代</td>
+</tr>
+</tbody>
+</table>
+<h3 id="agent">Agent与多智能体系统</h3>
+<table>
+<thead>
+<tr>
+<th>文章</th>
+<th>一句话总结</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DeepSeek新论文来了！联手清华、北大，优化智能体大模型推理</td>
+<td>DeepSeek推出DualPath推理系统，优化智能体LLM性能</td>
+</tr>
+<tr>
+<td>A Dual-Helix Governance Approach Towards Reliable Agentic AI for WebGIS Development</td>
+<td>提出双螺旋治理框架提升WebGIS中代理式AI的可靠性</td>
+</tr>
+<tr>
+<td>AgentIR: Reasoning-Aware Retrival for Deep Research Agents</td>
+<td>提出推理感知检索范式提升深度研究Agents效果</td>
+</tr>
+<tr>
+<td>$τ$-Knowledge: Evaluating Conversational Agents over Unstructured Knowledge</td>
+<td>τ-Knowledge评估对话代理对非结构化知识的处理能力</td>
+</tr>
+<tr>
+<td>Robustness of Agentic AI Systems via Adversarially-Aligned Jacobian Regularization</td>
+<td>提出对抗对齐雅可比正则化方法，在保证多智能体系统鲁棒性的同时减少性能损失</td>
+</tr>
+<tr>
+<td>Dual-Modality Multi-Stage Adversarial Safety Training: Robustifying Multimodal Web Agents Against Cross-Modal Attacks</td>
+<td>提出DMAST框架增强多模态Web代理抵御跨模态攻击</td>
+</tr>
+<tr>
+<td>VANGUARD: Vehicle-Anchored Ground Sample Distance Estimation for UAVs in GPS-Denied Environments</td>
+<td>提出VANGUARD方法，通过车辆锚点估计地面采样距离，解决GPS缺失环境下无人机尺度感知问题</td>
+</tr>
+<tr>
+<td>从LLM能力到科研组织结构：Agentic AI如何重构生物医学「团队科学」</td>
+<td>研究提出多Agent协作重构生物医学团队科学</td>
+</tr>
+<tr>
+<td>击败谷歌、英伟达！清华陈建宇×斯坦福Chelsea团队世界模型Ctrl-World具身能力登顶全球</td>
+<td>Ctrl-World世界模型在WorldArena评测中具身任务能力全球第一</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_4">多模态与视频生成</h3>
+<table>
+<thead>
+<tr>
+<th>文章</th>
+<th>一句话总结</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Helios: Real Real-Time Long Video Generation Model</td>
+<td>Helios是首个14B参数视频生成模型，在单H100 GPU上实现19.5FPS实时分钟级视频生成</td>
+</tr>
+<tr>
+<td>FocusGraph: Graph-Structured Frame Selection for Embodied Long Video Question Answering</td>
+<td>FocusGraph提出图结构关键帧选择框架，通过场景-字幕LLM选择器和无训练PSFR方法提升长视频问答性能</td>
+</tr>
+<tr>
+<td>ICLR2026 Oral</td>
+<td>当情感识别不再是分类题：EmotionThinker 让 SpeechLLM 学会"解释情绪"</td>
+</tr>
+<tr>
+<td>Underrepresented in Foundation Model Pretraining Data? A One-Shot Probe</td>
+<td>提出一种单样本方法预测视觉语言基础模型在目标领域的零样本准确率</td>
+</tr>
+<tr>
+<td>Pointer-CAD: Unifying B-Rep and Command Sequences via Pointer-based Edges &amp; Faces Selection</td>
+<td>Pointer-CAD提出基于指针的CAD生成框架，通过结合B-rep几何信息解决传统命令序列方法无法处理实体选择和量化误差的问题</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_5">模型效率与量化</h3>
+<table>
+<thead>
+<tr>
+<th>文章</th>
+<th>一句话总结</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LightMem：把大模型「长期记忆」的成本打下来</td>
+<td>LightMem降低大模型长期记忆系统的成本开销</td>
+</tr>
+<tr>
+<td>Efficient Refusal Ablation in LLM through Optimal Transport</td>
+<td>基于最优传输理论的高效LLM拒绝行为移除方法</td>
+</tr>
+<tr>
+<td>Dissecting Quantization Error: A Concentration-Alignment Perspective</td>
+<td>提出CAT方法通过联合优化集中度和对齐来减少量化误差</td>
+</tr>
+<tr>
+<td>Activation Outliers in Transformer Quantization: Reproduction, Statistical Analysis, and Deployment Tradeoffs</td>
+<td>重现分析Transformer量化中的激活异常现象</td>
+</tr>
+</tbody>
+</table>
+<h3 id="llm_1">LLM推理能力研究</h3>
+<table>
+<thead>
+<tr>
+<th>文章</th>
+<th>一句话总结</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>大语言模型真的会「推理」吗？一项系统性研究梳理 LLM 的结构性推理失败</td>
+<td>论文系统性梳理大语言模型推理失败的结构性缺陷</td>
+</tr>
+<tr>
+<td>RANGER: Sparsely-Gated Mixture-of-Experts with Adaptive Retrieval Re-ranking for Pathology Report Generation</td>
+<td>RANGER：基于稀疏门控MoE和自适应检索的病理报告生成框架</td>
+</tr>
+<tr>
+<td>SpotIt+: Verification-based Text-to-SQL Evaluation with Database Constraints</td>
+<td>基于约束挖掘的Text-to-SQL验证评估工具</td>
+</tr>
+<tr>
+<td>AILS-NTUA at SemEval-2026 Task 12: Graph-Based Retrieval and Reflective Prompting for Abductive Event Reasoning</td>
+<td>AILS-NTUA团队在SemEval-2026任务12中提出基于图检索和反思提示的三阶段系统，在因果推理任务中达到95%准确率</td>
+</tr>
+<tr>
+<td>World Properties without World Models: Recovering Spatial and Temporal Structure from Co-occurrence Statistics in Static Word Embeddings</td>
+<td>静态词嵌入已包含丰富的空间时间结构</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_6">前沿进展与行业动态</h3>
+<table>
+<thead>
+<tr>
+<th>文章</th>
+<th>一句话总结</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>最强Coding Plan上线！阿里云上线Qwen3.5、GLM-5、MiniMax M2.5、Kimi K2.5四大顶尖开源模型</td>
+<td>阿里云百炼推出包含四大顶尖开源模型API服务的最强Coding Plan，支持多模型自由切换和高频次编码需求</td>
+</tr>
+<tr>
+<td>超越IMO金牌？谷歌创超难FirstProof数学挑战新纪录</td>
+<td>谷歌AI在FirstProof数学挑战中取得新突破，AI智能体已能进行真正的数学研究而不仅是解题</td>
+</tr>
+<tr>
+<td>AI能写COBOL代码，砸崩IBM股价，单日蒸发310亿美元，创26年最惨纪录</td>
+<td>AI工具自动化COBOL代码迁移，致IBM股价暴跌13.2%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_7">趋势洞察</h2>
+<h3 id="1-agent">1. Agent系统从单智能体向多智能体协作演进</h3>
+<p>今日多篇文章显示Agentic AI正成为重要技术方向。从Grok 4.20采用4智能体团队架构、到生物医学团队科学的多Agent协作重构、再到DualPath推理系统优化Agent工作负载，表明业界正从单一智能体转向多智能体协同的治理模式。</p>
+<h3 id="2-llm">2. 向量提示接口成为LLM定制化新范式</h3>
+<p>传统文本提示面临可扩展性和稳定性瓶颈，向量提示接口因能持续改进且避免早期饱和受到关注。这预示着未来LLM调用可能从文本输入转向更精细的向量控制接口，为精准模型定制提供新路径。</p>
+    </div>
+
+</article>
+
+    </main>
+
+    <footer class="border-t border-gray-100 mt-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-6 text-center text-xs text-gray-400">
+            Powered by NewsBot &middot; 2026-03-05 14:08
+        </div>
+    </footer>
+</body>
+</html>

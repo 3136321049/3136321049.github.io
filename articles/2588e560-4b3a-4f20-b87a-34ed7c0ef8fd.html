@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANGER: Sparsely-Gated Mixture-of-Experts with Adaptive Retrieval Re-ranking for Pathology Report Generation - AI 新闻日报</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI',
+                               'Noto Sans SC', 'PingFang SC', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        .prose h1 { @apply text-2xl font-bold mt-6 mb-3; }
+        .prose h2 { @apply text-xl font-semibold mt-5 mb-2; }
+        .prose h3 { @apply text-lg font-semibold mt-4 mb-2; }
+        .prose p { @apply mb-3 leading-relaxed; }
+        .prose ul { @apply list-disc pl-5 mb-3; }
+        .prose ol { @apply list-decimal pl-5 mb-3; }
+        .prose li { @apply mb-1; }
+        .prose code { @apply bg-gray-100 px-1.5 py-0.5 rounded text-sm; }
+        .prose pre { @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-4; }
+        .prose a { @apply text-blue-600 hover:underline; }
+        .prose blockquote { @apply border-l-4 border-blue-400 pl-4 italic text-gray-600 my-4; }
+        .prose table { @apply w-full border-collapse mb-4; }
+        .prose th { @apply bg-gray-100 border border-gray-200 px-3 py-2 text-left text-sm font-semibold; }
+        .prose td { @apply border border-gray-200 px-3 py-2 text-sm; }
+        .prose hr { @apply my-6 border-gray-200; }
+    </style>
+    
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen font-sans">
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-14">
+                <a href="/" class="font-bold text-lg text-gray-900 tracking-tight">
+                    NewsBot
+                </a>
+                <div class="flex items-center gap-5 text-sm">
+                    <a href="/" class="text-gray-500 hover:text-gray-900 transition-colors">首页</a>
+                    <a href="/articles/" class="text-gray-500 hover:text-gray-900 transition-colors">文章</a>
+                    <a href="/digests/" class="text-gray-500 hover:text-gray-900 transition-colors">日报</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+        
+<article class="max-w-3xl mx-auto">
+
+    
+    <a href="/articles/" class="inline-flex items-center text-sm text-gray-400 hover:text-gray-600 mb-4">
+        &larr; 返回文章列表
+    </a>
+
+    
+    <h1 class="text-xl sm:text-2xl font-bold text-gray-900 leading-tight">RANGER: Sparsely-Gated Mixture-of-Experts with Adaptive Retrieval Re-ranking for Pathology Report Generation</h1>
+
+    
+    <div class="flex flex-wrap items-center gap-2 mt-3 text-sm">
+        <span class="bg-gray-100 text-gray-600 px-2 py-0.5 rounded">cs.CV</span>
+        <span class="text-gray-400">arxiv</span>
+        
+        <span class="text-gray-400">2026-03-04</span>
+        
+        
+        <span class="text-gray-400">Yixin Chen, Ziyu Su, Hikmat Khan, Muhammad Khalid Khan Niazi</span>
+        
+    </div>
+
+    
+    
+    <div class="flex flex-wrap gap-1.5 mt-2">
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">MoE</span>
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">病理报告生成</span>
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">Transformer</span>
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">检索增强</span>
+        
+    </div>
+    
+
+    
+    <a href="http://arxiv.org/abs/2603.04348v1" target="_blank" rel="noopener"
+       class="inline-flex items-center gap-1 text-sm text-blue-600 hover:underline mt-3">
+        查看原文 &nearr;
+    </a>
+
+    
+    
+    <div class="mt-6 space-y-4">
+
+        
+        
+        <div class="flex items-center gap-3">
+            <span class="text-sm text-gray-500">相关度</span>
+            <div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden max-w-xs">
+                <div class="h-full rounded-full bg-green-500"
+                     style="width: 90%"></div>
+            </div>
+            <span class="text-sm font-semibold text-green-600">
+                0.9
+            </span>
+        </div>
+        
+
+        
+        
+        <div class="bg-blue-50 border border-blue-100 rounded-lg p-4">
+            <p class="text-sm font-medium text-blue-900">RANGER：基于稀疏门控MoE和自适应检索的病理报告生成框架</p>
+        </div>
+        
+
+        
+        
+        <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">核心贡献</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">提出RANGER框架，将稀疏门控混合专家与自适应检索重排序结合，解决病理报告中同质化解码器和静态检索的局限性。</p>
+        </div>
+        
+
+        
+        
+        <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">方法概述</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">在解码器中集成稀疏门控MoE，采用noisy top-k路由和负载平衡正则化实现专家动态专业化；引入自适应检索重排序模块，基于视觉特征表示选择性细化检索记忆以减少噪声。</p>
+        </div>
+        
+
+        
+        
+        <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">关键结论</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">在PathText-BRCA数据集上BLEU-1至BLEU-4达0.4598、0.3044、0.2036、0.1435，验证了动态专家路由和自适应知识细化的有效性。</p>
+        </div>
+        
+
+        
+        <p class="text-xs text-gray-300">由 claude-internal-cli 生成</p>
+        
+    </div>
+    
+
+    
+    
+    <div class="mt-6">
+        <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">原文摘录</h3>
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-sm text-gray-600 leading-relaxed max-h-60 overflow-y-auto">
+            Pathology report generation remains a relatively under-explored downstream task, primarily due to the gigapixel scale and complex morphological heterogeneity of Whole Slide Images (WSIs). Existing pathology report generation frameworks typically employ transformer architectures, relying on a homogeneous decoder architecture and static knowledge retrieval integration. Such architectures limit generative specialization and may introduce noisy external guidance during the report generation process. To address these limitations, we propose RANGER, a sparsely-gated Mixture-of-Experts (MoE) framework with adaptive retrieval re-ranking for pathology report generation. Specifically, we integrate a sparsely gated MoE into the decoder, along with noisy top-$k$ routing and load-balancing regularization, to enable dynamic expert specialization across various diagnostic patterns. Additionally, we introduce an adaptive retrieval re-ranking module that selectively refines retrieved memory from a know...
+        </div>
+    </div>
+    
+
+</article>
+
+    </main>
+
+    <footer class="border-t border-gray-100 mt-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-6 text-center text-xs text-gray-400">
+            Powered by NewsBot &middot; 2026-03-05 14:08
+        </div>
+    </footer>
+</body>
+</html>

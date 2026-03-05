@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Field of Junctions: A Noise-Robust, Training-Free Structural Prior for Volumetric Inverse Problems - AI 新闻日报</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI',
+                               'Noto Sans SC', 'PingFang SC', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        .prose h1 { @apply text-2xl font-bold mt-6 mb-3; }
+        .prose h2 { @apply text-xl font-semibold mt-5 mb-2; }
+        .prose h3 { @apply text-lg font-semibold mt-4 mb-2; }
+        .prose p { @apply mb-3 leading-relaxed; }
+        .prose ul { @apply list-disc pl-5 mb-3; }
+        .prose ol { @apply list-decimal pl-5 mb-3; }
+        .prose li { @apply mb-1; }
+        .prose code { @apply bg-gray-100 px-1.5 py-0.5 rounded text-sm; }
+        .prose pre { @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-4; }
+        .prose a { @apply text-blue-600 hover:underline; }
+        .prose blockquote { @apply border-l-4 border-blue-400 pl-4 italic text-gray-600 my-4; }
+        .prose table { @apply w-full border-collapse mb-4; }
+        .prose th { @apply bg-gray-100 border border-gray-200 px-3 py-2 text-left text-sm font-semibold; }
+        .prose td { @apply border border-gray-200 px-3 py-2 text-sm; }
+        .prose hr { @apply my-6 border-gray-200; }
+    </style>
+    
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen font-sans">
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-14">
+                <a href="/" class="font-bold text-lg text-gray-900 tracking-tight">
+                    NewsBot
+                </a>
+                <div class="flex items-center gap-5 text-sm">
+                    <a href="/" class="text-gray-500 hover:text-gray-900 transition-colors">首页</a>
+                    <a href="/articles/" class="text-gray-500 hover:text-gray-900 transition-colors">文章</a>
+                    <a href="/digests/" class="text-gray-500 hover:text-gray-900 transition-colors">日报</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+        
+<article class="max-w-3xl mx-auto">
+
+    
+    <a href="/articles/" class="inline-flex items-center text-sm text-gray-400 hover:text-gray-600 mb-4">
+        &larr; 返回文章列表
+    </a>
+
+    
+    <h1 class="text-xl sm:text-2xl font-bold text-gray-900 leading-tight">3D Field of Junctions: A Noise-Robust, Training-Free Structural Prior for Volumetric Inverse Problems</h1>
+
+    
+    <div class="flex flex-wrap items-center gap-2 mt-3 text-sm">
+        <span class="bg-gray-100 text-gray-600 px-2 py-0.5 rounded">cs.CV</span>
+        <span class="text-gray-400">arxiv</span>
+        
+        <span class="text-gray-400">2026-03-02</span>
+        
+        
+        <span class="text-gray-400">Namhoon Kim, Narges Moeini, Justin Romberg, Sara Fridovich-Keil</span>
+        
+    </div>
+
+    
+    
+    <div class="flex flex-wrap gap-1.5 mt-2">
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">Computer Vision</span>
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">Image Denoising</span>
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">Inverse Problems</span>
+        
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">Training-free Method</span>
+        
+    </div>
+    
+
+    
+    <a href="http://arxiv.org/abs/2603.02149v1" target="_blank" rel="noopener"
+       class="inline-flex items-center gap-1 text-sm text-blue-600 hover:underline mt-3">
+        查看原文 &nearr;
+    </a>
+
+    
+    
+    <div class="mt-6 space-y-4">
+
+        
+        
+        <div class="flex items-center gap-3">
+            <span class="text-sm text-gray-500">相关度</span>
+            <div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden max-w-xs">
+                <div class="h-full rounded-full bg-red-400"
+                     style="width: 10%"></div>
+            </div>
+            <span class="text-sm font-semibold text-red-500">
+                0.1
+            </span>
+        </div>
+        
+
+        
+        
+        <div class="bg-blue-50 border border-blue-100 rounded-lg p-4">
+            <p class="text-sm font-medium text-blue-900">提出无需训练的3D结构先验方法处理体积去噪</p>
+        </div>
+        
+
+        
+        
+        <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">核心贡献</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">提出了3D Field of Junctions表示方法作为低信噪比下体积反问题的结构先验，实现训练无关的噪声鲁棒体积去噪</p>
+        </div>
+        
+
+        
+        
+        <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">方法概述</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">通过优化3D楔形交叉点来解释每个3D补丁并鼓励重叠补丁一致性，可作为任何体积反问题的降噪表示，通过投影或近端梯度下降实现</p>
+        </div>
+        
+
+        
+        
+        <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">关键结论</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">3D FoJ在低剂量CT、低温电子断层成像和激光雷达去噪等低信噪比任务上优于经典和神经网络方法</p>
+        </div>
+        
+
+        
+        <p class="text-xs text-gray-300">由 claude-internal-cli 生成</p>
+        
+    </div>
+    
+
+    
+    
+    <div class="mt-6">
+        <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">原文摘录</h3>
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-sm text-gray-600 leading-relaxed max-h-60 overflow-y-auto">
+            Volume denoising is a foundational problem in computational imaging, as many 3D imaging inverse problems face high levels of measurement noise. Inspired by the strong 2D image denoising properties of Field of Junctions (ICCV 2021), we propose a novel, fully volumetric 3D Field of Junctions (3D FoJ) representation that optimizes a junction of 3D wedges that best explain each 3D patch of a full volume, while encouraging consistency between overlapping patches. In addition to direct volume denoising, we leverage our 3D FoJ representation as a structural prior that: (i) requires no training data, and thus precludes the risk of hallucination, (ii) preserves and enhances sharp edge and corner structures in 3D, even under low signal to noise ratio (SNR), and (iii) can be used as a drop-in denoising representation via projected or proximal gradient descent for any volumetric inverse problem with low SNR. We demonstrate successful volume reconstruction and denoising with 3D FoJ across three div...
+        </div>
+    </div>
+    
+
+</article>
+
+    </main>
+
+    <footer class="border-t border-gray-100 mt-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-6 text-center text-xs text-gray-400">
+            Powered by NewsBot &middot; 2026-03-05 14:08
+        </div>
+    </footer>
+</body>
+</html>

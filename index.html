@@ -62,279 +62,211 @@
     <section>
         <div class="flex items-center justify-between mb-4">
             <h1 class="text-xl sm:text-2xl font-bold text-gray-900">
-                今日日报 &middot; 2026-03-02
+                今日日报 &middot; 2026-03-05
             </h1>
             <a href="/digests/" class="text-sm text-blue-600 hover:underline">全部日报 &rarr;</a>
         </div>
         <div class="bg-white rounded-xl border border-gray-200 p-5 sm:p-8 prose max-w-none">
-            <h1 id="2026-03-02">技术日报 | 2026-03-02</h1>
+            <h1 id="202635">技术日报 | 2026年3月5日</h1>
 <h2 id="_1">今日亮点</h2>
-<h3 id="1-parammem">1. ParamMem：参数化记忆模块增强语言代理反思能力</h3>
-<p><strong>来源</strong>：cs.LG<br />
-<strong>关注理由</strong>：提出将跨样本反思模式编码进模型参数的创新方法，实现了温度控制的多样化反思生成，为Agent记忆机制开辟了新方向。</p>
-<h3 id="2-rlhf">2. RLHF架构的根本局限性被揭示</h3>
-<p><strong>来源</strong>：cs.AI<br />
-<strong>关注理由</strong>：论文证明优化系统无法实现真正的规范响应，定义了智能体的两个必要架构条件（不可通约性与否定响应性），对RLHF范式的理论基础提出质疑。</p>
-<h3 id="3-modernbertbert">3. ModernBERT：BERT的现代化替代方案</h3>
-<p><strong>来源</strong>：Hugging Face Blog<br />
-<strong>关注理由</strong>：经过多年发展，终于出现有潜力的BERT替代方案，通过架构优化在保持性能的同时显著提升效率。</p>
-<h3 id="4-transformers-agents-20">4. Transformers Agents 2.0发布</h3>
-<p><strong>来源</strong>：Hugging Face Blog<br />
-<strong>关注理由</strong>：引入可迭代的ReactAgent和CodeAgent，Llama-3-70B-Instruct在GAIA排行榜上超越基于GPT-4的Agent，标志着开源Agent能力的重大突破。</p>
-<hr />
-<h2 id="_2">按主题分类</h2>
-<h3 id="_3">🤖 模型架构创新</h3>
+<h3 id="deepseekdualpathllm">DeepSeek联合清华北大推出DualPath推理系统，优化智能体LLM性能</h3>
+<p>论文提出DualPath推理系统，专门解决PD分离架构下KV-Cache读取负载不平衡问题，显著提升智能体工作负载下的推理性能。</p>
+<h3 id="_2">向量提示接口：大语言模型定制化新路径</h3>
+<p>研究主张LLM应公开向量提示输入作为公共接口，证据显示向量提示调优随监督增加持续改进，而文本提示优化存在早期饱和问题。</p>
+<h3 id="coding-plan">阿里云百炼推出最强Coding Plan，四大顶尖开源模型自由切换</h3>
+<p>支持Qwen3.5、GLM-5、MiniMax M2.5、Kimi K2.5四大模型API服务切换，突破单一模型限制，满足高频次编码需求。</p>
+<h2 id="_3">按主题分类</h2>
+<h3 id="llm">LLM定制化与推理优化</h3>
 <table>
 <thead>
 <tr>
-<th>标题</th>
+<th>文章</th>
 <th>一句话总结</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>ParamMem: Augmenting Language Agents with Parametric Reflective Memory</td>
-<td>通过参数化记忆模块增强语言代理的反思多样性</td>
+<td>Position: Vector Prompt Interfaces Should Be Exposed to Enable Customization of Large Language Models</td>
+<td>主张大语言模型应公开向量提示接口作为定制化控制机制，以解决文本提示在可扩展性和稳定性上的局限</td>
 </tr>
 <tr>
-<td>Agency and Architectural Limits: Why Optimization-Based Systems Cannot Be Norm-Responsive</td>
-<td>RLHF训练的大语言模型在架构上无法实现真正的规范响应能力</td>
+<td>$V_1$: Unifying Generation and Self-Verification for Parallel Reasoners</td>
+<td>提出V1框架，通过成对自验证统一生成与验证提升推理性能</td>
 </tr>
 <tr>
-<td>ModernBERT: Finally, a Replacement for BERT</td>
-<td>BERT架构的现代化改进版本，通过架构优化提升效率</td>
+<td>The Company You Keep: How LLMs Respond to Dark Triad Traits</td>
+<td>研究LLMs如何回应用户黑暗三联征特质的行为响应</td>
 </tr>
 <tr>
-<td>Falcon Mamba: 首个性能强劲的无注意力7B模型</td>
-<td>首个通用大规模纯Mamba架构的7B模型，支持任意长度序列处理</td>
-</tr>
-<tr>
-<td>mmBERT: ModernBERT goes Multilingual</td>
-<td>将ModernBERT模型扩展到多语言场景，提升跨语言理解能力</td>
+<td>马斯克：Grok今日归来！</td>
+<td>Grok 4.20 Beta上线，集成4智能体支持持续迭代</td>
 </tr>
 </tbody>
 </table>
-<h3 id="_4">🚀 大模型发布</h3>
+<h3 id="agent">Agent与多智能体系统</h3>
 <table>
 <thead>
 <tr>
-<th>标题</th>
+<th>文章</th>
 <th>一句话总结</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Qwen3.5 122B and 35B models offer Sonnet 4.5 performance on local computers</td>
-<td>阿里开源Qwen3.5模型，本地性能媲美Sonnet 4.5</td>
+<td>DeepSeek新论文来了！联手清华、北大，优化智能体大模型推理</td>
+<td>DeepSeek推出DualPath推理系统，优化智能体LLM性能</td>
 </tr>
 <tr>
-<td>Welcome GPT OSS, the new open-source model family from OpenAI</td>
-<td>OpenAI发布新的开源模型家族，标志性进展</td>
+<td>A Dual-Helix Governance Approach Towards Reliable Agentic AI for WebGIS Development</td>
+<td>提出双螺旋治理框架提升WebGIS中代理式AI的可靠性</td>
 </tr>
 <tr>
-<td>Welcome Llama 4 Maverick &amp; Scout on Hugging Face</td>
-<td>Meta发布Llama 4系列新模型</td>
+<td>AgentIR: Reasoning-Aware Retrival for Deep Research Agents</td>
+<td>提出推理感知检索范式提升深度研究Agents效果</td>
 </tr>
 <tr>
-<td>Welcome Gemma 3: Google's all new multimodal, multilingual, long context open LLM</td>
-<td>Google推出Gemma 3，具备多模态、多语言和长上下文能力</td>
+<td>$τ$-Knowledge: Evaluating Conversational Agents over Unstructured Knowledge</td>
+<td>τ-Knowledge评估对话代理对非结构化知识的处理能力</td>
 </tr>
 <tr>
-<td>Aya Vision: 101语言多模态模型</td>
-<td>大规模开源的多语言多模态模型，支持101种语言</td>
+<td>Robustness of Agentic AI Systems via Adversarially-Aligned Jacobian Regularization</td>
+<td>提出对抗对齐雅可比正则化方法，在保证多智能体系统鲁棒性的同时减少性能损失</td>
+</tr>
+<tr>
+<td>Dual-Modality Multi-Stage Adversarial Safety Training: Robustifying Multimodal Web Agents Against Cross-Modal Attacks</td>
+<td>提出DMAST框架增强多模态Web代理抵御跨模态攻击</td>
+</tr>
+<tr>
+<td>VANGUARD: Vehicle-Anchored Ground Sample Distance Estimation for UAVs in GPS-Denied Environments</td>
+<td>提出VANGUARD方法，通过车辆锚点估计地面采样距离，解决GPS缺失环境下无人机尺度感知问题</td>
+</tr>
+<tr>
+<td>从LLM能力到科研组织结构：Agentic AI如何重构生物医学「团队科学」</td>
+<td>研究提出多Agent协作重构生物医学团队科学</td>
+</tr>
+<tr>
+<td>击败谷歌、英伟达！清华陈建宇×斯坦福Chelsea团队世界模型Ctrl-World具身能力登顶全球</td>
+<td>Ctrl-World世界模型在WorldArena评测中具身任务能力全球第一</td>
 </tr>
 </tbody>
 </table>
-<h3 id="_5">⚡ 推理优化</h3>
+<h3 id="_4">多模态与视频生成</h3>
 <table>
 <thead>
 <tr>
-<th>标题</th>
+<th>文章</th>
 <th>一句话总结</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Continuous batching from first principles</td>
-<td>从第一性原理推导LLM连续批处理技术</td>
+<td>Helios: Real Real-Time Long Video Generation Model</td>
+<td>Helios是首个14B参数视频生成模型，在单H100 GPU上实现19.5FPS实时分钟级视频生成</td>
 </tr>
 <tr>
-<td>Unlocking Longer Generation with KV Cache Quantization</td>
-<td>通过KV缓存量化大幅降低显存占用，实现更长文本生成</td>
+<td>FocusGraph: Graph-Structured Frame Selection for Embodied Long Video Question Answering</td>
+<td>FocusGraph提出图结构关键帧选择框架，通过场景-字幕LLM选择器和无训练PSFR方法提升长视频问答性能</td>
 </tr>
 <tr>
-<td>Prefill and Decode for Concurrent Requests</td>
-<td>通过预填充和解码分离技术优化并发请求处理</td>
+<td>ICLR2026 Oral</td>
+<td>当情感识别不再是分类题：EmotionThinker 让 SpeechLLM 学会"解释情绪"</td>
 </tr>
 <tr>
-<td>Faster Assisted Generation with Dynamic Speculation</td>
-<td>动态推测优化辅助生成，加速推理速度</td>
+<td>Underrepresented in Foundation Model Pretraining Data? A One-Shot Probe</td>
+<td>提出一种单样本方法预测视觉语言基础模型在目标领域的零样本准确率</td>
 </tr>
 <tr>
-<td>Efficient Request Queueing</td>
-<td>探讨请求队列优化策略，提升系统吞吐量</td>
+<td>Pointer-CAD: Unifying B-Rep and Command Sequences via Pointer-based Edges &amp; Faces Selection</td>
+<td>Pointer-CAD提出基于指针的CAD生成框架，通过结合B-rep几何信息解决传统命令序列方法无法处理实体选择和量化误差的问题</td>
 </tr>
 </tbody>
 </table>
-<h3 id="vlm">🌐 多模态模型（VLM）</h3>
+<h3 id="_5">模型效率与量化</h3>
 <table>
 <thead>
 <tr>
-<th>标题</th>
+<th>文章</th>
 <th>一句话总结</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Llama can now see and run on your device - welcome Llama 3.2</td>
-<td>Meta发布带视觉和多模态能力的Llama 3.2</td>
+<td>LightMem：把大模型「长期记忆」的成本打下来</td>
+<td>LightMem降低大模型长期记忆系统的成本开销</td>
 </tr>
 <tr>
-<td>PaliGemma 2 Mix: Google's New Instruction Vision Language Models</td>
-<td>Google发布指令调优视觉语言模型，通过MoE架构提升性能</td>
+<td>Efficient Refusal Ablation in LLM through Optimal Transport</td>
+<td>基于最优传输理论的高效LLM拒绝行为移除方法</td>
 </tr>
 <tr>
-<td>SmolVLM2: Bringing Video Understanding to Every Device</td>
-<td>小型视觉语言模型，支持设备端视频理解</td>
+<td>Dissecting Quantization Error: A Concentration-Alignment Perspective</td>
+<td>提出CAT方法通过联合优化集中度和对齐来减少量化误差</td>
 </tr>
 <tr>
-<td>Aya Vision: 101语言多模态模型</td>
-<td>大规模开源的多语言多模态模型，支持101种语言</td>
-</tr>
-<tr>
-<td>SigLIP 2: 更好的多语言视觉语言编码器</td>
-<td>支持18种语言，优化跨模态理解性能</td>
+<td>Activation Outliers in Transformer Quantization: Reproduction, Statistical Analysis, and Deployment Tradeoffs</td>
+<td>重现分析Transformer量化中的激活异常现象</td>
 </tr>
 </tbody>
 </table>
-<h3 id="agent">🤖 Agent技术</h3>
+<h3 id="llm_1">LLM推理能力研究</h3>
 <table>
 <thead>
 <tr>
-<th>标题</th>
+<th>文章</th>
 <th>一句话总结</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>AI Agents Are Here - Transformers Agents 2.0</td>
-<td>新框架引入ReactAgent和CodeAgent，Llama-3-70B超越GPT-4 Agent</td>
+<td>大语言模型真的会「推理」吗？一项系统性研究梳理 LLM 的结构性推理失败</td>
+<td>论文系统性梳理大语言模型推理失败的结构性缺陷</td>
 </tr>
 <tr>
-<td>OpenEnv: Building the Open Agent Ecosystem Together</td>
-<td>开源智能体生态系统框架，促进开发、部署和协作</td>
+<td>RANGER: Sparsely-Gated Mixture-of-Experts with Adaptive Retrieval Re-ranking for Pathology Report Generation</td>
+<td>RANGER：基于稀疏门控MoE和自适应检索的病理报告生成框架</td>
 </tr>
 <tr>
-<td>CodeAgents + Structure: A Better Way to Execute Actions</td>
-<td>分层决策和动作验证机制提升Agent可靠性</td>
+<td>SpotIt+: Verification-based Text-to-SQL Evaluation with Database Constraints</td>
+<td>基于约束挖掘的Text-to-SQL验证评估工具</td>
 </tr>
 <tr>
-<td>smolagents: 简单的代码驱动Agent</td>
-<td>小型、多语言、长上下文推理Agent框架</td>
+<td>AILS-NTUA at SemEval-2026 Task 12: Graph-Based Retrieval and Reflective Prompting for Abductive Event Reasoning</td>
+<td>AILS-NTUA团队在SemEval-2026任务12中提出基于图检索和反思提示的三阶段系统，在因果推理任务中达到95%准确率</td>
 </tr>
 <tr>
-<td>DABStep: Data Agent Benchmark for Multi-step Reasoning</td>
-<td>评估智能体多步推理任务表现的基准框架</td>
+<td>World Properties without World Models: Recovering Spatial and Temporal Structure from Co-occurrence Statistics in Static Word Embeddings</td>
+<td>静态词嵌入已包含丰富的空间时间结构</td>
 </tr>
 </tbody>
 </table>
-<h3 id="_6">📊 评估与基准</h3>
+<h3 id="_6">前沿进展与行业动态</h3>
 <table>
 <thead>
 <tr>
-<th>标题</th>
+<th>文章</th>
 <th>一句话总结</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>HELMET: Holistically Evaluating Long-context Models</td>
-<td>首个系统性评估长上下文LLM的基准框架</td>
+<td>最强Coding Plan上线！阿里云上线Qwen3.5、GLM-5、MiniMax M2.5、Kimi K2.5四大顶尖开源模型</td>
+<td>阿里云百炼推出包含四大顶尖开源模型API服务的最强Coding Plan，支持多模型自由切换和高频次编码需求</td>
 </tr>
 <tr>
-<td>LiveCodeBench Leaderboard</td>
-<td>首个全面且无污染的代码LLM排行榜</td>
+<td>超越IMO金牌？谷歌创超难FirstProof数学挑战新纪录</td>
+<td>谷歌AI在FirstProof数学挑战中取得新突破，AI智能体已能进行真正的数学研究而不仅是解题</td>
 </tr>
 <tr>
-<td>The Open LLM Leaderboard</td>
-<td>排行榜更新，新增数学能力评估Math-Verify</td>
-</tr>
-<tr>
-<td>Community Evals: 去中心化AI模型评估系统</td>
-<td>实现去中心化、透明的AI模型评估</td>
-</tr>
-<tr>
-<td>BenCzechMark - Can your LLM Understand Czech?</td>
-<td>首个专门针对捷克语的大语言模型评估基准</td>
+<td>AI能写COBOL代码，砸崩IBM股价，单日蒸发310亿美元，创26年最惨纪录</td>
+<td>AI工具自动化COBOL代码迁移，致IBM股价暴跌13.2%</td>
 </tr>
 </tbody>
 </table>
-<h3 id="_7">🔧 工具与平台</h3>
-<table>
-<thead>
-<tr>
-<th>标题</th>
-<th>一句话总结</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Sentence Transformers is joining Hugging Face</td>
-<td>在Hugging Face提供高效的句子嵌入模型和API</td>
-</tr>
-<tr>
-<td>Transformers.js v3: WebGPU Support</td>
-<td>引入WebGPU支持，显著提升浏览器端AI推理性能</td>
-</tr>
-<tr>
-<td>Outlines-core 0.1.0: Structured Generation in Rust/Python</td>
-<td>跨模型结构化生成框架，保证输出格式有效性</td>
-</tr>
-<tr>
-<td>Gradio 5: 新一代ML界面构建工具</td>
-<td>引入全新组件系统、增强性能和可扩展性</td>
-</tr>
-<tr>
-<td>Trackio: 轻量级实验追踪库</td>
-<td>完全兼容WandB API，提供本地仪表板</td>
-</tr>
-</tbody>
-</table>
-<h3 id="_8">🔬 其他研究</h3>
-<table>
-<thead>
-<tr>
-<th>标题</th>
-<th>一句话总结</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Scaling Search Relevance: Augmenting App Store Ranking with LLM</td>
-<td>用LLM生成文本相关性标签，提升App Store搜索排名效果</td>
-</tr>
-<tr>
-<td>CXReasonAgent: 基于证据的胸片诊断推理</td>
-<td>整合LLM与诊断工具，解决LVLMs诊断证据不忠实问题</td>
-</tr>
-<tr>
-<td>DDTSR: 低延迟口语对话系统框架</td>
-<td>实现边听边想、边说边想，延迟降低19%-51%</td>
-</tr>
-<tr>
-<td>GeoPT: 模型自学真实物理规律</td>
-<td>何恺明团队新预训练范式</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="_9">趋势洞察</h2>
-<h3 id="1-agentagentgpt-4">1. Agent能力持续突破，开源Agent首次超越GPT-4</h3>
-<p>Transformers Agents 2.0的发布标志着开源Agent能力的重大里程碑。Llama-3-70B-Instruct在GAIA排行榜上超越基于GPT-4的Agent，表明开源模型在复杂任务执行能力上已追平甚至超越闭源模型。</p>
-<h3 id="2">2. 推理优化成为部署瓶颈的关键解决方案</h3>
-<p>从连续批处理、KV缓存量化到动态推测解码，各类推理优化技术密集涌现。这些技术共同指向一个目标：在保持模型性能的同时，大幅降低部署成本和延迟，使大模型在实际生产环境中更可行。</p>
-<h3 id="3">3. 多语言与多模态融合趋势明显</h3>
-<p>Aya Vision支持101种语言、SigLIP 2支持18种语言、Gemma 3的多模态能力——模型正从单一模态、单一语言向真正的多模态、多语言能力演进，这反映了AI应用全球化、多样化的实际需求。</p>
+<h2 id="_7">趋势洞察</h2>
+<h3 id="1-agent">1. Agent系统从单智能体向多智能体协作演进</h3>
+<p>今日多篇文章显示Agentic AI正成为重要技术方向。从Grok 4.20采用4智能体团队架构、到生物医学团队科学的多Agent协作重构、再到DualPath推理系统优化Agent工作负载，表明业界正从单一智能体转向多智能体协同的治理模式。</p>
+<h3 id="2-llm">2. 向量提示接口成为LLM定制化新范式</h3>
+<p>传统文本提示面临可扩展性和稳定性瓶颈，向量提示接口因能持续改进且避免早期饱和受到关注。这预示着未来LLM调用可能从文本输入转向更精细的向量控制接口，为精准模型定制提供新路径。</p>
         </div>
     </section>
     
@@ -548,109 +480,13 @@
         </div>
         <div class="space-y-2">
             
-            <a href="/articles/bc53493f-6e62-4440-ae76-41d5ab8a72ac.html"
+            <a href="/articles/45bf3016-c4e1-4b46-98aa-a685dcc9c099.html"
                class="flex items-center justify-between gap-3 bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
                 <div class="min-w-0 flex-1">
-                    <p class="text-sm font-medium text-gray-900 truncate">千问3.5霸榜全球开源大模型前四，10分钟通过中级程序员5小时编程</p>
+                    <p class="text-sm font-medium text-gray-900 truncate">阿里批准林俊旸离职，CTO周靖人接管千问！Gemini周浩确定加盟</p>
                     <div class="flex items-center gap-2 mt-0.5">
                         <span class="text-xs text-gray-400">量子位</span>
-                        <span class="text-xs text-gray-300">2026-03-01</span>
-                    </div>
-                </div>
-                
-            </a>
-            
-            <a href="/articles/f98eec92-093f-4eed-b3c3-2781c3083dff.html"
-               class="flex items-center justify-between gap-3 bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
-                <div class="min-w-0 flex-1">
-                    <p class="text-sm font-medium text-gray-900 truncate">千问AI春节DAU创历史新高，单日增幅惊人</p>
-                    <div class="flex items-center gap-2 mt-0.5">
-                        <span class="text-xs text-gray-400">量子位</span>
-                        <span class="text-xs text-gray-300">2026-03-01</span>
-                    </div>
-                </div>
-                
-            </a>
-            
-            <a href="/articles/749b5b8d-d347-420e-9a1e-bc6150efb88c.html"
-               class="flex items-center justify-between gap-3 bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
-                <div class="min-w-0 flex-1">
-                    <p class="text-sm font-medium text-gray-900 truncate">阶跃星辰杀入季后赛，强势跻身AI“新六小虎”第一梯队</p>
-                    <div class="flex items-center gap-2 mt-0.5">
-                        <span class="text-xs text-gray-400">量子位</span>
-                        <span class="text-xs text-gray-300">2026-03-01</span>
-                    </div>
-                </div>
-                
-            </a>
-            
-            <a href="/articles/0026bbd2-8ef3-4b3f-8460-dff3c29c1db7.html"
-               class="flex items-center justify-between gap-3 bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
-                <div class="min-w-0 flex-1">
-                    <p class="text-sm font-medium text-gray-900 truncate">反转！吓崩华尔街的AI末日预言报告被证伪，纳斯达克道琼斯都白跌了</p>
-                    <div class="flex items-center gap-2 mt-0.5">
-                        <span class="text-xs text-gray-400">量子位</span>
-                        <span class="text-xs text-gray-300">2026-03-01</span>
-                    </div>
-                </div>
-                
-            </a>
-            
-            <a href="/articles/a9f35756-4eac-4f5a-9dc9-8359de455ffa.html"
-               class="flex items-center justify-between gap-3 bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
-                <div class="min-w-0 flex-1">
-                    <p class="text-sm font-medium text-gray-900 truncate">杀进全球榜TOP2！国产视频模型黑马刚刚出现了</p>
-                    <div class="flex items-center gap-2 mt-0.5">
-                        <span class="text-xs text-gray-400">量子位</span>
-                        <span class="text-xs text-gray-300">2026-03-01</span>
-                    </div>
-                </div>
-                
-                <span class="text-xs font-semibold text-green-600 shrink-0">
-                    0.8
-                </span>
-                
-            </a>
-            
-            <a href="/articles/ac563ea0-64c5-47ff-9ee6-012f54c57c19.html"
-               class="flex items-center justify-between gap-3 bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
-                <div class="min-w-0 flex-1">
-                    <p class="text-sm font-medium text-gray-900 truncate">DeepSeek新论文剧透V4新框架！用闲置网卡加速智能体推理性能</p>
-                    <div class="flex items-center gap-2 mt-0.5">
-                        <span class="text-xs text-gray-400">量子位</span>
-                        <span class="text-xs text-gray-300">2026-03-01</span>
-                    </div>
-                </div>
-                
-                <span class="text-xs font-semibold text-green-600 shrink-0">
-                    0.8
-                </span>
-                
-            </a>
-            
-            <a href="/articles/1a38f80f-7657-4557-a928-0caa5ef878b2.html"
-               class="flex items-center justify-between gap-3 bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
-                <div class="min-w-0 flex-1">
-                    <p class="text-sm font-medium text-gray-900 truncate">何恺明团队新作GeoPT，全新预训练范式让模型自学真实物理规律</p>
-                    <div class="flex items-center gap-2 mt-0.5">
-                        <span class="text-xs text-gray-400">量子位</span>
-                        <span class="text-xs text-gray-300">2026-03-01</span>
-                    </div>
-                </div>
-                
-                <span class="text-xs font-semibold text-green-600 shrink-0">
-                    0.7
-                </span>
-                
-            </a>
-            
-            <a href="/articles/54bc596e-bc2b-4f13-ad17-cfe3495b031c.html"
-               class="flex items-center justify-between gap-3 bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
-                <div class="min-w-0 flex-1">
-                    <p class="text-sm font-medium text-gray-900 truncate">分拆百度Robotaxi萝卜快跑？李彦宏回应了</p>
-                    <div class="flex items-center gap-2 mt-0.5">
-                        <span class="text-xs text-gray-400">量子位</span>
-                        <span class="text-xs text-gray-300">2026-03-01</span>
+                        <span class="text-xs text-gray-300">2026-03-05</span>
                     </div>
                 </div>
                 
@@ -660,27 +496,143 @@
                 
             </a>
             
-            <a href="/articles/aebb1f42-d17c-439e-8940-2245d8508d13.html"
+            <a href="/articles/0c850b96-8122-4e55-9848-2d7ae5efd076.html"
                class="flex items-center justify-between gap-3 bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
                 <div class="min-w-0 flex-1">
-                    <p class="text-sm font-medium text-gray-900 truncate">OpenAI最新融资1100亿美元！英伟达亚马逊软银都抢到船票了</p>
+                    <p class="text-sm font-medium text-gray-900 truncate">微软研究登上Nature：把人类文明刻在玻璃里保存一万年</p>
                     <div class="flex items-center gap-2 mt-0.5">
-                        <span class="text-xs text-gray-400">量子位</span>
-                        <span class="text-xs text-gray-300">2026-03-01</span>
+                        <span class="text-xs text-gray-400">机器之心</span>
+                        <span class="text-xs text-gray-300">2026-03-05</span>
+                    </div>
+                </div>
+                
+                <span class="text-xs font-semibold text-red-500 shrink-0">
+                    0.2
+                </span>
+                
+            </a>
+            
+            <a href="/articles/201455ee-c081-422c-9a50-60548b393b5d.html"
+               class="flex items-center justify-between gap-3 bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+                <div class="min-w-0 flex-1">
+                    <p class="text-sm font-medium text-gray-900 truncate">ICLR2026 Oral | 当情感识别不再是分类题：EmotionThinker 让 SpeechLLM 学会“解释情绪”</p>
+                    <div class="flex items-center gap-2 mt-0.5">
+                        <span class="text-xs text-gray-400">机器之心</span>
+                        <span class="text-xs text-gray-300">2026-03-05</span>
+                    </div>
+                </div>
+                
+                <span class="text-xs font-semibold text-green-600 shrink-0">
+                    0.9
+                </span>
+                
+            </a>
+            
+            <a href="/articles/f057e793-cffe-4ab3-a086-b959a87d8050.html"
+               class="flex items-center justify-between gap-3 bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+                <div class="min-w-0 flex-1">
+                    <p class="text-sm font-medium text-gray-900 truncate">刚上完春晚，宇树新品机器狗就亮相了</p>
+                    <div class="flex items-center gap-2 mt-0.5">
+                        <span class="text-xs text-gray-400">机器之心</span>
+                        <span class="text-xs text-gray-300">2026-03-05</span>
+                    </div>
+                </div>
+                
+                <span class="text-xs font-semibold text-yellow-600 shrink-0">
+                    0.7
+                </span>
+                
+            </a>
+            
+            <a href="/articles/af0770f8-65e2-4279-ac6f-72ac480dd35e.html"
+               class="flex items-center justify-between gap-3 bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+                <div class="min-w-0 flex-1">
+                    <p class="text-sm font-medium text-gray-900 truncate">AI能写COBOL代码，砸崩IBM股价，单日蒸发310亿美元，创26年最惨纪录</p>
+                    <div class="flex items-center gap-2 mt-0.5">
+                        <span class="text-xs text-gray-400">机器之心</span>
+                        <span class="text-xs text-gray-300">2026-03-05</span>
+                    </div>
+                </div>
+                
+                <span class="text-xs font-semibold text-green-600 shrink-0">
+                    0.8
+                </span>
+                
+            </a>
+            
+            <a href="/articles/3ce35da1-2050-4024-9760-f6c4226e7ed1.html"
+               class="flex items-center justify-between gap-3 bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+                <div class="min-w-0 flex-1">
+                    <p class="text-sm font-medium text-gray-900 truncate">DeepMind药物衍生公司的独家新AI，堪称AlphaFold 4的专有药物设计引擎</p>
+                    <div class="flex items-center gap-2 mt-0.5">
+                        <span class="text-xs text-gray-400">机器之心</span>
+                        <span class="text-xs text-gray-300">2026-03-05</span>
+                    </div>
+                </div>
+                
+                <span class="text-xs font-semibold text-green-600 shrink-0">
+                    0.8
+                </span>
+                
+            </a>
+            
+            <a href="/articles/c9a806e2-bcd0-4c2d-8a02-4f7a66190a60.html"
+               class="flex items-center justify-between gap-3 bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+                <div class="min-w-0 flex-1">
+                    <p class="text-sm font-medium text-gray-900 truncate">最强Coding Plan上线！阿里云上线Qwen3.5、GLM-5、MiniMax M2.5、Kimi K2.5四大顶尖开源模型</p>
+                    <div class="flex items-center gap-2 mt-0.5">
+                        <span class="text-xs text-gray-400">机器之心</span>
+                        <span class="text-xs text-gray-300">2026-03-05</span>
+                    </div>
+                </div>
+                
+                <span class="text-xs font-semibold text-green-600 shrink-0">
+                    0.9
+                </span>
+                
+            </a>
+            
+            <a href="/articles/801f9a7c-8d9a-4f8e-b656-fc9df55c7e1f.html"
+               class="flex items-center justify-between gap-3 bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+                <div class="min-w-0 flex-1">
+                    <p class="text-sm font-medium text-gray-900 truncate">大语言模型真的会「推理」吗？一项系统性研究梳理 LLM 的结构性推理失败</p>
+                    <div class="flex items-center gap-2 mt-0.5">
+                        <span class="text-xs text-gray-400">机器之心</span>
+                        <span class="text-xs text-gray-300">2026-03-05</span>
+                    </div>
+                </div>
+                
+                <span class="text-xs font-semibold text-green-600 shrink-0">
+                    0.9
+                </span>
+                
+            </a>
+            
+            <a href="/articles/15b5b8a2-b484-490e-a60d-48f8e02b17bf.html"
+               class="flex items-center justify-between gap-3 bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
+                <div class="min-w-0 flex-1">
+                    <p class="text-sm font-medium text-gray-900 truncate">消费级显卡可跑！刚刚，阿里Qwen3.5又开源3款新模型</p>
+                    <div class="flex items-center gap-2 mt-0.5">
+                        <span class="text-xs text-gray-400">机器之心</span>
+                        <span class="text-xs text-gray-300">2026-03-05</span>
                     </div>
                 </div>
                 
             </a>
             
-            <a href="/articles/962713c0-cbb1-4138-8e78-14f4b9944d05.html"
+            <a href="/articles/07118b7f-2de5-4e67-a774-f02298d0fbdc.html"
                class="flex items-center justify-between gap-3 bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-blue-300 transition">
                 <div class="min-w-0 flex-1">
-                    <p class="text-sm font-medium text-gray-900 truncate">海淀放大招！90亿资金+近30条政策，重磅释放三大科创关键信号</p>
+                    <p class="text-sm font-medium text-gray-900 truncate">只要1100美元tokens，一周重写 Next.js！</p>
                     <div class="flex items-center gap-2 mt-0.5">
-                        <span class="text-xs text-gray-400">量子位</span>
-                        <span class="text-xs text-gray-300">2026-03-01</span>
+                        <span class="text-xs text-gray-400">机器之心</span>
+                        <span class="text-xs text-gray-300">2026-03-05</span>
                     </div>
                 </div>
+                
+                <span class="text-xs font-semibold text-yellow-600 shrink-0">
+                    0.6
+                </span>
                 
             </a>
             
@@ -694,7 +646,7 @@
 
     <footer class="border-t border-gray-100 mt-16">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 py-6 text-center text-xs text-gray-400">
-            Powered by NewsBot &middot; 2026-03-02 00:09
+            Powered by NewsBot &middot; 2026-03-05 14:08
         </div>
     </footer>
 </body>

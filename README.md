@@ -1,6 +1,6 @@
 # 3136321049.github.io
 
-Personal site of Jacob (Jie) Chen. Live at https://3136321049.github.io/
+Personal site of Jacob / Jie Chen. Live at https://3136321049.github.io/
 
 - `index.html` — the homepage (single static file, no build step)
 - `static/jc.svg` — favicon

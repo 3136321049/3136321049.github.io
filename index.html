@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jacob Chen</title>
-<meta name="description" content="Jacob (Jie) Chen — Research Engineer working on LLM post-training, agent RL and coding agents. Imperial College London alum. Gym, poker, tennis, travel.">
+<meta name="description" content="Jacob (Jie) Chen — from investment banking, factory floors and hardware product management to AI. Research Engineer working on LLM post-training, agent RL and coding agents.">
 <meta property="og:title" content="Jacob Chen">
 <meta property="og:description" content="Research Engineer · LLM post-training, agent RL and coding agents.">
 <meta property="og:type" content="website">
@@ -111,7 +111,7 @@
   .btn.primary:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
 
   /* sections */
-  section { padding: 44px 0; border-top: 1px solid var(--line); }
+  section { padding: 44px 0; border-top: 1px solid var(--line); scroll-margin-top: 56px; }
   h2 {
     font-family: "Instrument Serif", serif; font-weight: 400; font-size: 34px;
     line-height: 1.1; margin-bottom: 26px;
@@ -128,15 +128,45 @@
     padding: 4px 10px; border-radius: 6px;
   }
 
-  /* timeline */
-  .role { display: grid; grid-template-columns: 1fr; gap: 4px; padding: 18px 0; }
-  .role + .role { border-top: 1px dashed var(--line); }
-  @media (min-width: 640px) { .role { grid-template-columns: 132px 1fr; gap: 24px; } }
-  .when { font-family: "JetBrains Mono", monospace; font-size: 12.5px; color: var(--ink-3); padding-top: 3px; }
-  .org { font-weight: 600; }
-  .org .title { font-weight: 400; color: var(--ink-2); }
-  .role p { margin-top: 6px; color: var(--ink-2); font-size: 15px; }
-  .role p b { color: var(--ink); font-weight: 500; }
+  .when { font-family: "JetBrains Mono", monospace; font-size: 12.5px; color: var(--ink-3); }
+
+  /* connecting the dots */
+  .quote {
+    font-family: "Instrument Serif", serif; font-style: italic; font-size: 21px; line-height: 1.35;
+    color: var(--ink-2); max-width: 560px; margin-bottom: 28px;
+  }
+  .quote cite { display: block; font-family: "JetBrains Mono", monospace; font-style: normal; font-size: 12px; color: var(--ink-3); margin-top: 8px; }
+  .hats { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin-bottom: 40px; font-size: 13.5px; }
+  .hat { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 4px 12px; white-space: nowrap; }
+  .hat.ai { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 500; }
+  .hats .sep { color: var(--ink-3); }
+
+  .stop { position: relative; padding: 0 0 34px 38px; }
+  .stop:not(:last-child)::after {
+    content: ""; position: absolute; left: 7px; top: 24px; bottom: 0; width: 2px; background: var(--line);
+  }
+  .stop:nth-last-child(2)::after { background: linear-gradient(to bottom, var(--line), var(--accent)); }
+  .stop:last-child { padding-bottom: 0; }
+  .stop::before {
+    content: ""; position: absolute; left: 0; top: 4px; width: 16px; height: 16px; border-radius: 50%;
+    background: var(--bg); border: 2px solid var(--ink-3); box-sizing: border-box;
+  }
+  .stop.now::before { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 6px var(--accent-soft); }
+  .stop .head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+  .tag {
+    font-family: "JetBrains Mono", monospace; font-size: 11.5px; letter-spacing: .04em; text-transform: uppercase;
+    color: var(--ink-2); background: var(--chip); padding: 2px 8px; border-radius: 5px;
+  }
+  .stop.now .tag { background: var(--accent-soft); color: var(--accent); }
+  .stop h3 { font-size: 17px; font-weight: 600; margin-top: 6px; }
+  .stop h3 .co { font-weight: 400; color: var(--ink-2); }
+  .stop .did { margin-top: 4px; font-size: 15px; color: var(--ink-2); }
+  .stop .did b { color: var(--ink); font-weight: 500; }
+  .stop .took {
+    margin-top: 10px; font-family: "Instrument Serif", serif; font-style: italic;
+    font-size: 20px; line-height: 1.35; color: var(--ink);
+  }
+  .stop .took::before { content: "→ "; color: var(--accent); font-style: normal; }
 
   /* projects */
   .grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
@@ -192,7 +222,7 @@
     <a class="mark" href="#top">Jacob Chen</a>
     <div class="navlinks">
       <a class="hide-sm" href="#about">About</a>
-      <a href="#work">Work</a>
+      <a href="#path">Path</a>
       <a class="hide-sm" href="#projects">Projects</a>
       <a href="#life">Life</a>
       <button id="theme" aria-label="Toggle dark mode" title="Toggle theme">
@@ -204,12 +234,12 @@
 
 <main class="wrap" id="top">
   <header class="hero">
-    <div class="eyebrow">Research Engineer · LLM Post-Training</div>
+    <div class="eyebrow">Banker · FDE · Product Manager → AI</div>
     <h1>Jacob Chen<span class="alt">陈杰</span></h1>
     <p class="lede">
-      I train language models to be <strong>useful agents</strong>: coding agents that ship working apps,
-      user agents that behave like real people, and the <strong>RL environments and reward signals</strong>
-      that keep both of them honest. Currently on the WeChat team at <strong>Tencent</strong>.
+      I've written research in <strong>investment banking</strong>, commissioned software on a
+      <strong>factory floor</strong>, and defined <strong>consumer hardware</strong> as a product manager.
+      Then I chose AI. Today I train language models to be <strong>useful agents</strong> on the WeChat team at Tencent.
     </p>
     <div class="links">
       <a class="btn primary" href="mailto:cj3136321049@gmail.com">
@@ -230,16 +260,16 @@
   <section id="about">
     <h2><span class="num">01</span>About</h2>
     <p>
-      My work sits where model training meets real products. I post-train large models with SFT and
-      reinforcement learning, build sandboxed environments that turn compilers, GUI checks and visual
+      Early in my career I went looking on purpose. Finance, heavy industry, consumer electronics,
+      internet search: different industries, and a different hat in each. I wanted to see how value is
+      judged, how things get built, and what users actually need, from more than one seat at the table.
+    </p>
+    <p>
+      AI is where all of those seats turned out to matter at once. I now post-train large models with SFT
+      and reinforcement learning, build sandboxed environments that turn compilers, GUI checks and visual
       comparisons into reward, and design evaluations that catch reward hacking before it ships.
       Lately I have been building <em>self-improving loops</em>: systems that generate their own benchmarks
       and write verifier feedback back into the agent's skills.
-    </p>
-    <p>
-      Before Tencent I worked on search relevance at Meituan, multi-agent systems and consumer hardware
-      at Guide Infrared, and on-site industrial software at SUPCON. I studied Electronic and Information
-      Engineering at Imperial College London (MEng, First-Class Honours).
     </p>
     <div class="chips">
       <span class="chip">Agent RL</span>
@@ -252,53 +282,67 @@
     </div>
   </section>
 
-  <section id="work">
-    <h2><span class="num">02</span>Work</h2>
+  <section id="path">
+    <h2><span class="num">02</span>Connecting the dots</h2>
+    <p class="quote">“You can't connect the dots looking forward; you can only connect them looking backwards.”
+      <cite>— Steve Jobs</cite></p>
 
-    <div class="role">
-      <div class="when">2025 — now</div>
-      <div>
-        <div class="org">Tencent · WeChat <span class="title">— Research Engineer, Post-Training</span></div>
-        <p>Post-training 100B+ parameter models as <b>coding agents for WeChat Mini Programs</b>, plus
-        persona-driven user agents to train and test them against. Co-designed the sandboxed RL environment
-        (compile, GUI validation, static review, visual comparison) and the reward aggregation that keeps
-        the model from gaming it.</p>
-      </div>
+    <div class="hats" aria-label="Roles so far">
+      <span class="hat">Investment Banking</span><span class="sep">→</span>
+      <span class="hat">Forward Deployed Engineer</span><span class="sep">→</span>
+      <span class="hat">Product Manager</span><span class="sep">→</span>
+      <span class="hat">Agent Engineer</span><span class="sep">→</span>
+      <span class="hat">ML Engineer</span><span class="sep">→</span>
+      <span class="hat ai">AI Research Engineer</span>
     </div>
 
-    <div class="role">
-      <div class="when">2025</div>
-      <div>
-        <div class="org">Meituan <span class="title">— ML Intern, Search</span></div>
-        <p>Built an LLM relevance-annotation model for Instashopping search with SFT and a decoupled DPO recipe,
-        <b>cutting per-item labelling cost by ~25×</b> while lifting label accuracy above 92%.</p>
+    <div class="path">
+      <div class="stop">
+        <div class="head"><span class="when">2022</span><span class="tag">Finance</span></div>
+        <h3>Investment Banking Intern <span class="co">· CITIC Securities</span></h3>
+        <p class="did">Wrote a sector report on China's chip foundries: SMIC, Hua Hong, CR Micro.</p>
+        <p class="took">How an industry looks from the outside: competition, margins, and where the technology is heading.</p>
       </div>
-    </div>
 
-    <div class="role">
-      <div class="when">2024</div>
-      <div>
-        <div class="org">Guide Infrared <span class="title">— AI Agents · Product Manager</span></div>
-        <p>Built a LangGraph multi-agent system that reads thermal-imaging data and writes reports,
-        <b>30% better than a GPT-4o baseline</b>. Before that, owned product definition for a handheld
-        outdoor thermal camera.</p>
+      <div class="stop">
+        <div class="head"><span class="when">2023</span><span class="tag">Industrial manufacturing</span></div>
+        <h3>Forward Deployed Engineer <span class="co">· SUPCON</span></h3>
+        <p class="did">Deployed on site at a solar-wafer plant: cleaned sensor data, wrote control logic and
+        safety interlocks, and commissioned software next to process engineers.</p>
+        <p class="took">Software only counts once it works in the real world, with messy data and no room for unsafe states.</p>
       </div>
-    </div>
 
-    <div class="role">
-      <div class="when">2023</div>
-      <div>
-        <div class="org">SUPCON <span class="title">— Forward Deployed Engineer</span></div>
-        <p>On the floor of a solar-wafer plant, cleaning sensor data and commissioning control logic
-        and safety interlocks alongside process engineers.</p>
+      <div class="stop">
+        <div class="head"><span class="when">2024</span><span class="tag">Consumer hardware</span></div>
+        <h3>Product Manager <span class="co">· Guide Infrared</span></h3>
+        <p class="did">Defined a handheld outdoor thermal camera from user interviews and competitive
+        benchmarks, then got optics, hardware, firmware and app teams to ship it together.</p>
+        <p class="took">Start from what the user is trying to do, then get five teams to agree on it.</p>
       </div>
-    </div>
 
-    <div class="role">
-      <div class="when">2022</div>
-      <div>
-        <div class="org">CITIC Securities <span class="title">— Investment Banking Intern</span></div>
-        <p>Wrote a sector report on China's semiconductor foundries (SMIC, Hua Hong, CR Micro).</p>
+      <div class="stop">
+        <div class="head"><span class="when">2024</span><span class="tag">AI agents</span></div>
+        <h3>Agent Engineer <span class="co">· Guide Infrared</span></h3>
+        <p class="did">Built a LangGraph multi-agent system that reads thermal-imaging data and writes reports,
+        <b>30% better than a GPT-4o baseline</b>.</p>
+        <p class="took">The first time the threads met: a real domain, real users, and a model doing the work.</p>
+      </div>
+
+      <div class="stop">
+        <div class="head"><span class="when">2025</span><span class="tag">Internet search</span></div>
+        <h3>ML Intern <span class="co">· Meituan</span></h3>
+        <p class="did">Trained an LLM annotator for Instashopping search with SFT and a decoupled DPO recipe,
+        <b>cutting labelling cost ~25×</b> at over 92% label accuracy.</p>
+        <p class="took">Data and objectives decide what a model learns. Cost decides whether it ships.</p>
+      </div>
+
+      <div class="stop now">
+        <div class="head"><span class="when">2025 — now</span><span class="tag">AI</span></div>
+        <h3>Research Engineer, Post-Training <span class="co">· Tencent WeChat</span></h3>
+        <p class="did">Post-training 100B+ parameter models as <b>coding agents for WeChat Mini Programs</b>,
+        with persona-driven user agents to test them against, and sandboxed RL environments whose rewards
+        the model can't game.</p>
+        <p class="took">Every earlier dot shows up here: judging value like a banker, respecting constraints like an FDE, starting from the user like a PM.</p>
       </div>
     </div>
   </section>
